@@ -1,0 +1,65 @@
+@keyframes bounce
+{
+    0%, 100% 
+    {
+        transform: translateY(0);
+    }
+    50% 
+    {
+        transform: translateY(-20px);
+    }
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#user
+{
+    animation: bounce 2s infinite ease-in-out;
+}
+#bg
+{
+    background: linear-gradient(90deg,rgb(41, 43, 55) 0%, rgba(43, 45, 54, 1) 100%);
+	animation: gradient 15s ease infinite;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('src/fonts/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('src/fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+}
+
+/* cleaner page */
+
+@keyframes bounce_cleaner
+{
+    0%, 100% 
+    {
+        transform: translateY(0);
+    }
+    50% 
+    {
+        transform: translateY(-2px);
+    }
+}
+
+#user[bounce="-5" ]
+{
+    animation: bounce_cleaner 2s infinite ease-in-out;
+}
