@@ -1,5 +1,5 @@
 {
-  "name": "42-Local",
+  "name": "42-local",
   "version": "1.0.0",
   "description": "Install without sudo and clean your local",
   "main": "main.js",
@@ -9,7 +9,8 @@
     "build:css": "npx tailwindcss -i ./src/style/input.css -o ./src/style/output.css",
     "build": "electron-builder"
   },
-  "author": "mrmo7ox",
+  "repository": "https://github.com/mrmo7ox/42-local",
+  "author": "mrmo7ox <medelouardisec@gmail.com>", 
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
@@ -36,6 +37,7 @@
         "AppImage",
         "deb"
       ],
+      "icon": "./src/icons/icon.png",
       "category": "Utility"
     }
   }

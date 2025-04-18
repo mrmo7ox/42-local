@@ -10,5 +10,6 @@ linux:
   target:
     - AppImage
     - deb
+  icon: ./src/icons/icon.png
   category: Utility
 electronVersion: 35.1.5

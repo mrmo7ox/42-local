@@ -9,12 +9,14 @@ const { json } = require("stream/consumers");
 const { Menu, globalShortcut } = require('electron');
 
 
+addtodesktop();
+
 const createWindow = () => {
   Menu.setApplicationMenu(null);
- 
   const win = new BrowserWindow({
     width: 600,
     height: 700,
+    icon: path.join(__dirname, '/src/icons/icon.png'),
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
@@ -27,6 +29,26 @@ const createWindow = () => {
   });
   win.loadFile("index.html");
 };
+
+function addtodesktop()
+{
+  const homeDir = os.homedir();
+
+  const file = `${homeDir}/.local/share/applications/42-local.desktop`
+  const exec_path = app.getAppPath()
+  if (fs.existsSync(file)) {
+    console.log(`File exists: ${file}`);
+  } else {
+    const content = `[Desktop Entry]\nName=42-local\nComment=Install without sudo and clean your local\nExec=${exec_path}\nType=Application\nTerminal=false`;
+    fs.writeFile(file, content, (err) => {
+      if (err) {
+        console.error('An error occurred writing the file:', err);
+        return;
+      }
+      console.log('File written successfully!');
+    });
+  }
+}
 
 function removeFolder(folderPath) {
   try {
