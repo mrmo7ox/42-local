@@ -1,9 +1,10 @@
 {
-  "name": "42-local",
+  "name": "42-Local",
   "version": "1.0.0",
   "description": "install without sudo and clean your local",
   "main": "main.js",
   "scripts": {
+    "tl": "npx tailwindcss -i ./src/style/input.css -o ./src/style/output.css --watch",
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "npx tailwindcss -i ./src/styles/tailwind.css -o ./dist/output.css --watch"
@@ -12,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "daisyui": "^5.0.27",
     "electron": "^35.1.5",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.4"

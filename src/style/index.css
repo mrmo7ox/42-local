@@ -32,12 +32,12 @@
 }
 @font-face {
     font-family: 'Ubuntu';
-    src: url('src/fonts/Ubuntu-Medium.ttf') format('truetype');
+    src: url('../fonts/Ubuntu-Medium.ttf') format('truetype');
     font-weight: normal;
 }
 @font-face {
     font-family: 'Ubuntu';
-    src: url('src/fonts/Ubuntu-Bold.ttf') format('truetype');
+    src: url('../fonts/Ubuntu-Bold.ttf') format('truetype');
     font-weight: bold;
 }
 body {
@@ -62,4 +62,34 @@ body {
 #user[bounce="-5" ]
 {
     animation: bounce_cleaner 2s infinite ease-in-out;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.tooltip-container .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 125%; 
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+
+
+    transition: visibility 0s linear 0.3s, opacity 0.3s ease;
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
 }

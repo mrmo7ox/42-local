@@ -1,0 +1,83 @@
+@keyframes bounce
+{
+    0%, 100% 
+    {
+        transform: translateY(0);
+    }
+    50% 
+    {
+        transform: translateY(-20px);
+    }
+}
+
+#user
+{
+    animation: bounce 2s infinite ease-in-out;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #2b2d36;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+}
+
+/* cleaner page */
+
+@keyframes bounce_cleaner
+{
+    0%, 100% 
+    {
+        transform: translateY(0);
+    }
+    50% 
+    {
+        transform: translateY(-2px);
+    }
+}
+
+#user[bounce="-5" ]
+{
+    animation: bounce_cleaner 2s infinite ease-in-out;
+}
+
+
+/* scrool barr */
+ ::-webkit-scrollbar {
+    width: 12px; 
+}
+
+
+::-webkit-scrollbar-track {
+    background: #2b2d36; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #424965;
+    border-radius: 6px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+::-webkit-scrollbar-horizontal {
+    height: 8px; 
+}

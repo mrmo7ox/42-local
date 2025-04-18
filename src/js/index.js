@@ -1,22 +1,29 @@
 const { ipcRenderer } = require('electron');
 
-ipcRenderer.send('user-name', 'username');
-
-ipcRenderer.on('command-output', (event, output) => {
+ipcRenderer.on('user-name', (event, output) => {
     const usernamediv = document.querySelector("#user");
-    const user_cleaner = document.querySelector("#user_cleaner");
     if(output)
     {
-        let name = '';
+        let username = '';
         const res = output.split(' ');
-        name += res[0][0];
-        name += res[1][0];
-        console.log(name);
-        usernamediv.textContent = name;
-        user_cleaner.textContent = name;
+        username += res[0][0];
+        username += res[1][0];
+        usernamediv.textContent = username;
+        
     }
     else
     {
         usernamediv.textContent = "?";
     }
+});
+
+window.addEventListener('load', () => {
+    
+    let path = window.location.href;
+    let file = path.split("/").at(-1).replace(".html", "");
+    if(file === "index")
+    {
+        ipcRenderer.send('user-name', 'username');
+    }
+  
 });
