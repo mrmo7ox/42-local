@@ -20,14 +20,17 @@
 
 ### Installation & Usage
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/mrmo7ox/42-local.git
-    cd 42-local
-    ```
+1.  **Download the latest release:**
+    *   Go to the [**Releases**](https://github.com/mrmo7ox/42-local/releases) page of this repository.
+    *   Download the appropriate asset for your system from the latest alpha release (e.g., `42-local-cleaner-v0.1.0.zip` or similar).
 
-2.  **Run the cleaner:**
-    *   _(Add specific instructions here. Examples below - replace with actual steps)_
+2.  **Prepare the tool:**
+    *   _(Add steps needed after download, e.g., unzip the file)_
+    *   Example: `unzip 42-local-cleaner-v0.1.0.zip`
+    *   Navigate into the extracted directory: `cd 42-local-cleaner-v0.1.0`
+
+3.  **Run the cleaner:**
+    *   _(Add specific instructions here based on the release artifact. Examples below - replace with actual steps)_
     *   **If it's a script:**
         ```bash
         ./clean_script.sh
@@ -36,7 +39,10 @@
         ```
     *   **If it's a web page:**
         Open `index.html` in your web browser.
-
+    *   **If it's an executable:**
+        ```bash
+        ./42-local-cleaner
+        ```
     *   _(Add details about any required configuration or steps)_
 
 ## Motivation
