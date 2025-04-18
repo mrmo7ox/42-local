@@ -11,21 +11,32 @@
 <style>
 
 </style>
-<body>
+<body class="relative">
   <div id="loader" class="h-[100vh] flex justify-center items-center">
     <span class="scale-[2] loading loading-spinner loading-xl"></span>
   </div>
-   <div id="content" class="hidden gap-5 flex-col w-full flex justify-start items-center">
+   <div id="content" class="hidden gap-3 flex-col w-full flex justify-start items-center">
       <div class="mt-2 px-4 flex justify-between items-center w-[90%] h-[100px]">
         <a  href="../../index.html" id="back" class="hover:scale-[0.90] cursor-pointer text-[40px] text-white duration-200 transition-all " >🏠</a>
         <div id="user_cleaner" bounce="-5" class="shadow-xl shadow-[#232633] border-3 border-[#2b2d36] flex text-[40px] justify-center items-center text-[#b3b3b3] bg-[#232633] w-[80px] h-[80px] rounded-full" >?</div>
       </div>
 
+
+      <div id="controls" class="w-[80%] gap-4 flex justify-start items-center">
+        <button onclick="auto_clean()" id="auto_clean" class="text-[20px] w-full btn btn-soft btn-success"> Auto Clean</button>
+      </div>
+      <div class="w-[80%] flex justify-between">
+          <h4 id="used">100</h4>
+          <h4 id="total">0</h4>
+      </div>
+      <progress id="storage" class="progress progress-warning w-56 w-[80%]" value="70" max="100"></progress>
       <div id="folders" class="grid grid-cols-3 w-full px-10">
         
       </div>
-
-
     </div>
+    <button onclick="clean_with_list()" id="delete_button" class="hidden flex justify-center items-center h-[70px] w-[70px] text-[30px] shadow-xl cursor-pointer hover:scale-[0.9] duration-200 transition-all fixed bottom-10 right-10 bg-white p-5 rounded-full">
+      ✨
+    </button>
+   
 </body>
 </html>

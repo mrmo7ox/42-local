@@ -1,0 +1,14 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.42local.mrmo7ox
+productName: 42-Local
+files:
+  - filter:
+      - '**/*'
+linux:
+  target:
+    - AppImage
+    - deb
+  category: Utility
+electronVersion: 35.1.5

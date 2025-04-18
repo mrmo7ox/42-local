@@ -4,8 +4,14 @@ var os = require('os');
 var path = require('path');
 const { error } = require("console");
 const { stderr } = require("process");
+const fs = require('fs');
+const { json } = require("stream/consumers");
+const { Menu, globalShortcut } = require('electron');
+
 
 const createWindow = () => {
+  Menu.setApplicationMenu(null);
+ 
   const win = new BrowserWindow({
     width: 600,
     height: 700,
@@ -14,9 +20,23 @@ const createWindow = () => {
       contextIsolation: false,
     },
   });
-
+  globalShortcut.register('f12', () => {
+    if (win) {
+      win.webContents.toggleDevTools();
+    }
+  });
   win.loadFile("index.html");
 };
+
+function removeFolder(folderPath) {
+  try {
+      fs.rmSync(folderPath, { recursive: true, force: true });
+      console.log(`Folder removed: ${folderPath}`);
+  } catch (err) {
+      console.error(`Error removing folder: ${err.message}`);
+  }
+}
+
 
 ipcMain.on("user-name", (event, arg) => {
   let cmd = "getent passwd $USER | cut -d ':' -f 5 | cut -d ',' -f 1";
@@ -38,9 +58,23 @@ ipcMain.on("user-name", (event, arg) => {
   });
 });
 
+ipcMain.on("auto_clean", (event, arg) => {
+  const homeDir = os.homedir();
+  let   cache_dir = `${homeDir}/.cache`;
+  removeFolder(cache_dir)
+  event.reply("auto_clean_res", 'done');
+ 
+});
+
+ipcMain.on("clean_with_list", (event, arg) => {
+  let folder = JSON.parse(arg)
+  folder.map(folder =>{
+    removeFolder(folder);
+  });
+  event.reply("clean_with_list_res", 'done');
+});
+
 ipcMain.on("files", (event, arg) => {
-  const os = require("os");
-  const { exec } = require("child_process");
 
   const homeDir = os.homedir();
   const appDirectory = `${homeDir}/.var/app/`;
@@ -97,9 +131,52 @@ ipcMain.on("files", (event, arg) => {
           });
         }
       });
-      console.log(result)
       event.reply("files-res", JSON.stringify(result, null, 2));
     });
+  });
+});
+
+
+function getDiskSpaceForDevice(device, callback) {
+  exec(`df -m | grep ${device}`, (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Error fetching disk space: ${error.message}`);
+      callback(null);
+      return;
+    }
+
+    if (stderr) {
+      console.error(`Standard error: ${stderr}`);
+      callback(null);
+      return;
+    }
+
+    const columns = stdout.trim().split(/\s+/);
+
+    if (columns.length >= 6) {
+      const info = {
+        filesystem: columns[0],
+        size: columns[1],
+        used: columns[2],
+        available: columns[3],
+        usagePercentage: columns[4],
+        mountedOn: columns[5],
+      };
+      callback(info);
+    } else {
+      console.log(`No information found for device: ${device}`);
+      callback(null);
+    }
+  });
+}
+ipcMain.on("storage", (event, arg) => {
+  getDiskSpaceForDevice("/dev/sdb", (info) => {
+    if (info) {
+      console.log(info);
+      event.reply("storage-res", info);
+    } else {
+      event.reply("storage-res", { error: "No information found for device." });
+    }
   });
 });
 
