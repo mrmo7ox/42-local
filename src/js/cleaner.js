@@ -12,8 +12,16 @@ ipcRenderer.on('user-name', (event, output) => {
     {
         let username = '';
         const res = output.split(' ');
-        username += res[0][0];
-        username += res[1][0];
+        let first = res[0][0];
+        let last = res[1][0];
+        if(first)
+        {
+          username += first;
+        }
+        if(last)
+        {
+          username += last;
+        }
         usernamediv.textContent = username;
         
     }

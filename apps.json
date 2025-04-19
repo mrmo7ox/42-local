@@ -1,0 +1,13 @@
+[
+    {
+      "name": "VSCode",
+      "downloadUrl": "https://code.visualstudio.com/sha/download?build=stable&os=linux-x64",
+      "installDir": "~/.var/app/vscode_stable",
+      "icon": "~/.var/app/vscode_stable/resources/app/resources/linux/code.png",
+      "tmpFile": "~/goinfre/code-stable-x64.tar.gz",
+      "binaryPath": "~/.var/app/vscode_stable/bin/code",
+      "appdir": "~/.local/share/applications/",
+      "alias": "code"
+    }
+    
+  ]
