@@ -27,3 +27,27 @@ window.addEventListener('load', () => {
     }
   
 });
+
+function handleExternalLinks() {
+    const links = document.querySelectorAll('a[href^="http://"], a[href^="https://"]');
+  
+    links.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+  
+        const url = link.getAttribute('href');
+  
+        if (url && window.electronAPI && typeof window.electronAPI.openExternal === 'function') {
+          window.electronAPI.openExternal(url);
+        } else {
+          console.error('electronAPI.openExternal is not available. Check your preload script.');
+        }
+      });
+    });
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', handleExternalLinks);
+  } else {
+    handleExternalLinks();
+  }
