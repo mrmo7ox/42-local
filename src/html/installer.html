@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../style/output.css" rel="stylesheet">
+  <link href="../style/installer.css" rel="stylesheet">
+  <script src="../js/installer.js"></script>
+  <script src="https://kit.fontawesome.com/1cc2b7bb17.js" crossorigin="anonymous"></script>
+</head>
+<style>
+
+</style>
+<body class="relative">
+  <div id="loader" class="h-[100vh] flex justify-center items-center">
+    <span class="scale-[2] loading loading-spinner loading-xl"></span>
+  </div>
+  <div id="content" class="hidden gap-3 flex-col w-full flex justify-start items-center">
+    <div class="mt-2 px-4 flex justify-between items-center w-[90%] h-[100px]">
+      <a  href="../../index.html" id="back" class="hover:scale-[0.90] cursor-pointer text-[40px] text-white duration-200 transition-all " >🏠</a>
+      <div id="user_cleaner" bounce="-5" class="shadow-xl shadow-[#232633] border-3 border-[#2b2d36] flex text-[40px] justify-center items-center text-[#b3b3b3] bg-[#232633] w-[80px] h-[80px] rounded-full" >?</div>
+    </div>
+    <div class="w-[80%] flex justify-between">
+      <h4 id="used">100</h4>
+      <h4 id="total">0</h4>
+  </div>
+  <progress id="storage" class="progress  progress-warning w-56 w-[80%]" value="70" max="100"></progress>
+  <div id="apps" class="mt-4 gap-2 grid grid-cols-4 w-full px-10">
+  </div>
+</body>
+</html>

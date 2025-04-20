@@ -1,0 +1,135 @@
+@keyframes bounce
+{
+    0%, 100% 
+    {
+        transform: translateY(0);
+    }
+    50% 
+    {
+        transform: translateY(-20px);
+    }
+}
+
+#user
+{
+    animation: bounce 2s infinite ease-in-out;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #2b2d36;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+}
+
+/* cleaner page */
+
+@keyframes bounce_cleaner
+{
+    0%, 100% 
+    {
+        transform: translateY(0);
+    }
+    50% 
+    {
+        transform: translateY(-2px);
+    }
+}
+
+#user[bounce="-5" ]
+{
+    animation: bounce_cleaner 2s infinite ease-in-out;
+}
+
+
+/* scrool barr */
+ ::-webkit-scrollbar {
+    width: 12px; 
+    border-radius: 99px;
+}
+
+
+::-webkit-scrollbar-track {
+    border-radius: 99px;
+    background: #2b2d36; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #424965;
+    border-radius: 99px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 99px;
+}
+
+
+::-webkit-scrollbar-horizontal {
+    height: 8px;
+    border-radius: 99px;
+}
+
+
+#el:hover #img
+{
+    opacity: 0.7;
+    transform: translateY(-10);
+    transition: all 200ms ease-in-out;
+}
+#el #img
+{
+    opacity: 100;
+    transform: translateY(0);
+    transition: all 200ms ease-in-out;
+}
+
+#el:hover #b1
+{
+    opacity: 100;
+    transform: translateY(0);
+    transition: all 200ms ease-in-out;
+}
+#el #b1
+{
+    opacity: 0;
+    transform: translateY(-30px);
+}
+#el:hover #b2
+{
+    opacity: 100;
+    transform: translateY(0);
+    transition: all 200ms ease-in-out;
+}
+#el #b2
+{
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+
+#el #screen
+{
+    opacity: 0;
+}
+#el:hover #screen
+{
+    opacity: 100;
+    
+}

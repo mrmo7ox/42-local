@@ -1,0 +1,57 @@
+{
+  "name": "42-local",
+  "version": "1.0.1",
+  "description": "Install without sudo and clean your local",
+  "main": "main.js",
+  "scripts": {
+    "tl": "npx tailwindcss -i ./src/style/input.css -o ./src/style/output.css --watch",
+    "start": "electron .",
+    "build:css": "npx tailwindcss -i ./src/style/input.css -o ./src/style/output.css",
+    "build": "electron-builder",
+    "watch" : "nodemon --exec electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrmo7ox/42-local.git"
+  },
+  "publisher": {
+    "povider": "github",
+    "releaseType": "release"
+  },
+  "author": "mrmo7ox <medelouardisec@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "daisyui": "^5.0.27",
+    "electron": "^35.1.5",
+    "electron-builder": "^26.0.12",
+    "electron-log": "^5.3.4",
+    "electron-updater": "^6.6.2",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "follow-redirects": "^1.15.9",
+    "nodemon": "^3.1.9",
+    "tar": "^7.4.3"
+  },
+  "build": {
+    "appId": "com.42local.mrmo7ox",
+    "productName": "42-Local",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "./src/icons/icon.png",
+      "category": "Utility"
+    }
+  }
+}
