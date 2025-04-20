@@ -161,4 +161,20 @@ function getDiskSpaceForDevice(device, callback) {
   });
 }
 
-module.exports = {getDiskSpaceForDevice, readJsonFile,  removeFolder, removeFile, extractTarFile, downloadFile, appendTextToFile, creatTextToFile, findAndReplaceText};
+function copyFileIfExists(source, destination) {
+  fs.access(source, fs.constants.F_OK, (err) => {
+    if (err) {
+      console.error(`Source file "${source}" does not exist.`);
+      return;
+    }
+
+    fs.copyFile(source, destination, (err) => {
+      if (err) {
+        console.error(`Error copying file: ${err}`);
+      } else {
+        console.log(`File copied successfully from "${source}" to "${destination}".`);
+      }
+    });
+  });
+}
+module.exports = {copyFileIfExists, getDiskSpaceForDevice, readJsonFile,  removeFolder, removeFile, extractTarFile, downloadFile, appendTextToFile, creatTextToFile, findAndReplaceText};

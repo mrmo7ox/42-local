@@ -2,7 +2,7 @@ const {exec} = require('child_process')
 const {downloadFile} = require('./utils');
 const {updateFile} = require('./vscode');
 const os = require('os');
-const filePath = './apps.json';
+const filePath = '/tmp/apps.json';
 
 function zsh(action, info) {
     return new Promise((resolve, reject) => {

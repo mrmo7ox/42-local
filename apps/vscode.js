@@ -1,6 +1,6 @@
 var os = require('os');
 const fs = require('fs');
-const filePath = './apps.json';
+const filePath = '/tmp/apps.json';
 const {removeFolder, removeFile, downloadFile , extractTarFile, appendTextToFile, creatTextToFile, findAndReplaceText} = require('./utils');
 const { exec } = require('child_process');
 
@@ -65,6 +65,7 @@ async function createSettingsFile(basePath) {
       console.error(`Error creating settings.json: ${err.message}`);
     }
   }
+  
 function addzsh(filepath)
 {
     createSettingsFile(filepath);

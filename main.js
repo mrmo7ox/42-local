@@ -10,8 +10,9 @@ const {getDiskSpaceForDevice, readJsonFile, removeFolder} = require('./apps/util
 const {zsh} = require('./apps/zsh')
 autoUpdater.logger = require("electron-log");
 const {flatpak} = require('./apps/flatpak')
+const {get_file_check, installed_or_not} = require('./apps/filechecker')
 let  jsonData;
-const filePath = './apps.json';
+const filePath = '/tmp/apps.json';
 
 autoUpdater.autoDownload  = true;
 autoUpdater.autoInstallOnAppQuit  = true;
@@ -232,17 +233,30 @@ ipcMain.on('apps-installer', async (event, arg) => {
 });
 
 
-ipcMain.on("apps", (event, arg) => 
-  {
-    readJsonFile(filePath, (err, result)=>{
-    if(err){
-      event.reply("apps-res", JSON.stringify({ error: err.message }, null, 2));
-    }
-    else{
-      event.reply("apps-res", JSON.stringify(result, null, 2));
-    }
-    });
-  });
+ipcMain.on("apps", async (event, arg) => {
+  const filePath = path.join("/", "tmp", "apps.json");
+
+  try {
+      await get_file_check();
+      await installed_or_not();
+      fs.readFile(filePath, "utf8", (err, data) => {
+          if (err) {
+              event.reply(
+                  "apps-res",
+                  JSON.stringify({ error: err.message }, null, 2)
+              );
+          } else {
+              const result = JSON.parse(data);
+              event.reply("apps-res", JSON.stringify(result, null, 2));
+          }
+      });
+  } catch (error) {
+      event.reply(
+          "apps-res",
+          JSON.stringify({ error: error.message }, null, 2)
+      );
+  }
+});
 
 
 function addtodesktop()
