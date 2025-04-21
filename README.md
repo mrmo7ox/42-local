@@ -40,9 +40,9 @@ This project is aimed at providing a clean and straightforward setup for 42-loca
 
 ## Screenshots 📸
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px;">
-  <img src="https://i.ibb.co/Qv90xPmd/Screenshot-from-2025-04-21-11-10-36.png" alt="Screenshot 1" style="width: 100%;">
-  <img src="https://i.ibb.co/20MGHs4Q/Screenshot-from-2025-04-21-11-10-46.png" alt="Screenshot 2" style="width: 100%;">
-  <img src="https://i.ibb.co/YFSY4xx6/Screenshot-from-2025-04-21-11-10-54.png" alt="Screenshot 3" style="width: 100%;">
+  <img src="https://i.ibb.co/Qv90xPmd/Screenshot-from-2025-04-21-11-10-36.png" alt="Screenshot 1" style="width: 10%;">
+  <img src="https://i.ibb.co/20MGHs4Q/Screenshot-from-2025-04-21-11-10-46.png" alt="Screenshot 2" style="width: 10%;">
+  <img src="https://i.ibb.co/YFSY4xx6/Screenshot-from-2025-04-21-11-10-54.png" alt="Screenshot 3" style="width: 10%;">
 </div>
 
 ## Program 💻
