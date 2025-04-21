@@ -2,7 +2,7 @@ const { exec } = require("child_process");
 const os = require("os");
 const fs = require("fs");
 const { updateFile } = require("./vscode");
-const { copyFileIfExists } = require("./utils");
+const { copyFileIfExists , removeFile} = require("./utils");
 const filePath = "./apps.json";
 
 // Function to add Flathub remote
@@ -102,7 +102,7 @@ function flatpak(action, info) {
           resolve(stdout);
         });
 
-        // Stream real-time output
+
         process.stdout.on("data", (data) => {
           console.log(`STDOUT: ${data}`);
         });
@@ -125,8 +125,11 @@ function flatpak(action, info) {
         });
       } else if (action === "uninstall") {
         console.log("Starting Flatpak uninstallation...");
-        await addflathub(); // Ensure Flathub remote is added
-
+        await addflathub(); 
+        const home = os.homedir();
+        const to = `${home}/.local/share/applications/${info.downloadUrl}.desktop`
+        console.log("Starting Flatpak uninstallation...");
+        removeFile(to)
         const command = `flatpak uninstall --user flathub ${info.downloadUrl} -y`;
         console.log(`Executing command: ${command}`);
 
@@ -138,7 +141,6 @@ function flatpak(action, info) {
           console.log(`Flatpak uninstalled successfully: ${stdout}`);
           resolve(stdout);
 
-          // Update apps.json after successful uninstallation
           updateFile(info.id, "no", filePath);
         });
       } else {
