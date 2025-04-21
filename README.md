@@ -46,6 +46,7 @@ This project is aimed at providing a clean and straightforward setup for 42-loca
      <img src="https://i.ibb.co/YFSY4xx6/Screenshot-from-2025-04-21-11-10-54.png" alt="Screenshot 3" style="width: 30%;">
    </div>
 <div>
+https://github.com/mrmo7ox/42-local/releases/
 
 ## Program 💻
 To use the `.appimage` file downloaded from the [Releases](https://github.com/mrmo7ox/42-local/releases) page:
@@ -70,6 +71,3 @@ To use the `.appimage` file downloaded from the [Releases](https://github.com/mr
 
 ## Contributing 🤝
 Feel free to fork this repo and submit pull requests for any improvements.
-
-## License 📜
-This project is licensed under the MIT License.
