@@ -18,6 +18,7 @@ This project is aimed at providing a clean and straightforward setup for 42-loca
 - **CSS**: Handles the primary design and layout.
 - **JavaScript**: Manages app logic and interactivity.
 - **HTML**: Provides the structure for the app.
+- **Tailwind CSS**: Quickly style your application with utility-first CSS.
 
 ## Costum Build 🔧
 1. Clone the repository:
@@ -28,13 +29,13 @@ This project is aimed at providing a clean and straightforward setup for 42-loca
    ```bash
    cd 42-local
    ```
-3. Install dependencies (if applicable):
+3. Install dependencies:
    ```bash
    npm install
    ```
-4. Build (if applicable):
+4. Build the project:
    ```bash
-   npm run Build
+   npm run build
    ```
 
 ## Screenshots 📸
