@@ -8,7 +8,7 @@
     "start": "electron .",
     "build:css": "npx tailwindcss -i ./src/style/input.css -o ./src/style/output.css",
     "build": "electron-builder",
-    "watch" : "nodemon --exec electron ."
+    "watch": "nodemon --exec electron ."
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.4",
+    "create-desktop-shortcuts": "^1.11.1",
     "follow-redirects": "^1.15.9",
     "nodemon": "^3.1.9",
     "tar": "^7.4.3"

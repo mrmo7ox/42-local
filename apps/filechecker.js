@@ -2,7 +2,7 @@ const { exec } = require('child_process');
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
-const {updateFile} = require('./vscode')
+const { updateFile } = require('./vscode')
 
 async function installed_or_not() {
     const flatpakDir = path.join(os.homedir(), "goinfre/flatpak/app");
@@ -21,11 +21,11 @@ async function installed_or_not() {
                     for (const key of Object.keys(item)) {
                         if (key === "vscode") {
                             const status = fs.existsSync(vscodeDir) ? "yes" : "no";
-                             updateFile(key, status, jsonFilePath);
+                            updateFile(key, status, jsonFilePath);
                         } else if (key !== "zsh" && item[key]["downloadUrl"] === folder) {
-                             updateFile(key, "yes", jsonFilePath);
+                            updateFile(key, "yes", jsonFilePath);
                         } else if (key !== "zsh" && item[key]["downloadUrl"] !== folder) {
-                             updateFile(key, "no", jsonFilePath);
+                            updateFile(key, "no", jsonFilePath);
                         }
                     }
                 }
@@ -46,10 +46,10 @@ async function get_file_check() {
 
         if (fs.existsSync(filePath)) {
             console.log("File already exists in /tmp:", filePath);
-            resolve(); 
+            resolve();
             return;
         }
-        
+
         const cmd = `curl -o "${filePath}" ${url}`;
         console.log("Downloading file...");
         exec(cmd, (error, stdout, stderr) => {
@@ -64,13 +64,13 @@ async function get_file_check() {
             }
 
             console.log("File downloaded successfully to:", filePath);
-            resolve(); 
+            resolve();
         });
 
-        
+
     });
 }
 
 
 
-module.exports = {get_file_check, installed_or_not}
+module.exports = { get_file_check, installed_or_not }

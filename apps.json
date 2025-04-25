@@ -1,0 +1,394 @@
+[
+  {
+    "vscode": {
+      "type": "bash",
+      "icon": "https://icons.veryicon.com/png/o/business/vscode-program-item-icon/vscode.png",
+      "bashfile": "./installers/vscode.sh",
+      "status": "no"
+    },
+    "zsh": {
+      "type": "bash",
+      "icon": "https://i.ibb.co/j9CV0Gfv/New-Project.png",
+      "bashfile": "./installers/zsh.sh",
+      "status": "no"
+    },
+    "Extension Manager": {
+      "type": "flatpak",
+      "downloadUrl": "com.mattjakeman.ExtensionManager",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fmattjakeman%2FExtensionManager%2F3cc789251f02e1a4c33e27bc928b5fc3%2Ficons%2F128x128%2Fcom.mattjakeman.ExtensionManager.png&w=128&q=100",
+      "status": "no"
+    },
+    "visualstudio": {
+      "type": "flatpak",
+      "downloadUrl": "com.visualstudio.code",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fvisualstudio%2Fcode%2F3d07e95c24b37ec7aa02e038b39db57f%2Ficons%2F128x128%2Fcom.visualstudio.code.png&w=128&q=100",
+      "status": "no"
+    },
+    "wireshark": {
+      "type": "flatpak",
+      "downloadUrl": "org.wireshark.Wireshark",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fwireshark%2FWireshark%2Fe9d2d1c088c8e0d79ddbb59ec73d80da%2Ficons%2F128x128%2Forg.wireshark.Wireshark.png&w=128&q=100",
+      "status": "no"
+    },
+    "slack": {
+      "type": "flatpak",
+      "downloadUrl": "com.slack.Slack",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fslack%2FSlack%2F8fc6054f61fde87b3e65360e972efe12%2Ficons%2F128x128%2Fcom.slack.Slack.png&w=128&q=100",
+      "status": "no"
+    },
+    "spotify": {
+      "type": "flatpak",
+      "downloadUrl": "com.spotify.Client",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fspotify%2FClient%2F881e2ba78e572dcdb13eb8d25057866d%2Ficons%2F128x128%2Fcom.spotify.Client.png&w=128&q=100",
+      "status": "no"
+    },
+    "xemu": {
+      "type": "flatpak",
+      "downloadUrl": "app.xemu.xemu",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fapp%2Fxemu%2Fxemu%2F01ad33e2353d2c678cea920b0f1d505e%2Ficons%2F128x128%2Fapp.xemu.xemu.png&w=128&q=100",
+      "status": "no"
+    },
+    "kdenlive": {
+      "type": "flatpak",
+      "downloadUrl": "org.kde.kdenlive",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fkde%2Fkdenlive.desktop%2Ffbd8203a15a5d840afe295717c1f617c%2Ficons%2F128x128%2Forg.kde.kdenlive.desktop.png&w=128&q=100",
+      "status": "no"
+    },
+    "zed": {
+      "type": "flatpak",
+      "downloadUrl": "dev.zed.Zed",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fdev%2Fzed%2FZed%2Ff95d19b2552571157c075aa707bd3324%2Ficons%2F128x128%2Fdev.zed.Zed.png&w=128&q=100",
+      "status": "yes"
+    },
+    "handbrake": {
+      "type": "flatpak",
+      "downloadUrl": "fr.handbrake.ghb",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Ffr%2Fhandbrake%2Fghb%2Fc3597c0f97cac06198828d786fa6baad%2Ficons%2F128x128%2Ffr.handbrake.ghb.png&w=128&q=100",
+      "status": "no"
+    },
+    "PyCharm-Professional": {
+      "type": "flatpak",
+      "downloadUrl": "com.jetbrains.PyCharm-Community",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fjetbrains%2FPyCharm-Community%2F4f780a66e7914489a1010d29a3b4bc0d%2Ficons%2F128x128%2Fcom.jetbrains.PyCharm-Community.png&w=128&q=100",
+      "status": "no"
+    },
+    "Godot": {
+      "type": "flatpak",
+      "downloadUrl": "org.godotengine.Godot",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fgodotengine%2FGodot.desktop%2F36875898ee69547922ca8350993ca071%2Ficons%2F128x128%2Forg.godotengine.Godot.desktop.png&w=128&q=100",
+      "status": "no"
+    },
+    "codeblocks": {
+      "type": "flatpak",
+      "downloadUrl": "org.codeblocks.codeblocks",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fcodeblocks%2Fcodeblocks%2Fac537ebf78231938cb63f20662796dc8%2Ficons%2F128x128%2Forg.codeblocks.codeblocks.png&w=128&q=100",
+      "status": "no"
+    },
+    "Postman": {
+      "type": "flatpak",
+      "downloadUrl": "com.getpostman.Postman",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fgetpostman%2FPostman%2F793bc9a0867f71b6e25556e6fc560ef8%2Ficons%2F128x128%2Fcom.getpostman.Postman.png&w=128&q=100",
+      "status": "no"
+    },
+    "Hidamari": {
+      "type": "flatpak",
+      "downloadUrl": "io.github.jeffshee.Hidamari",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fio%2Fgithub%2Fjeffshee.Hidamari%2F5bf4ca12b81aa14f53b65f2154ae260c%2Ficons%2F128x128%2Fio.github.jeffshee.Hidamari.png&w=128&q=100",
+      "status": "no"
+    },
+    "wezterm": {
+      "type": "flatpak",
+      "downloadUrl": "org.wezfurlong.wezterm",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Frepo%2Fappstream%2Fx86_64%2Ficons%2F128x128%2Forg.wezfurlong.wezterm.png&w=128&q=100",
+      "status": "no"
+    },
+    "YSoccer": {
+      "type": "flatpak",
+      "downloadUrl": "io.sourceforge.YSoccer",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fio%2Fsourceforge%2FYSoccer%2Fe8734e1c763761e7d61ca8f303b8c3a8%2Ficons%2F128x128%2Fio.sourceforge.YSoccer.png&w=128&q=100",
+      "status": "no"
+    },
+    "VLC": {
+      "type": "flatpak",
+      "downloadUrl": "org.videolan.VLC",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fvideolan%2FVLC%2F7bbc1978ff44590e9fd3f3f1a112c620%2Ficons%2F128x128%2Forg.videolan.VLC.png&w=128&q=100",
+      "status": "no"
+    },
+    "Minecraft": {
+      "type": "flatpak",
+      "downloadUrl": "com.mojang.Minecraft",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fmojang%2FMinecraft%2F05238507cc15ca4f5e34bfff3bd9423e%2Ficons%2F128x128%2Fcom.mojang.Minecraft.png&w=128&q=100",
+      "status": "no"
+    },
+    "qbittorrent": {
+      "type": "flatpak",
+      "downloadUrl": "org.qbittorrent.qBittorrent",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fqbittorrent%2FqBittorrent%2F06aa7ba213d143a35ab141be6a607b6e%2Ficons%2F128x128%2Forg.qbittorrent.qBittorrent.png&w=128&q=100",
+      "status": "no"
+    },
+    "marktext": {
+      "type": "flatpak",
+      "downloadUrl": "com.github.marktext.marktext",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Frepo%2Fappstream%2Fx86_64%2Ficons%2F128x128%2Fcom.github.marktext.marktext.png&w=128&q=100",
+      "status": "no"
+    },
+    "PixelWheels": {
+      "type": "flatpak",
+      "downloadUrl": "com.agateau.PixelWheels",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fagateau%2FPixelWheels%2F4bbeb5bb032e2c5860adb50b0ac5a945%2Ficons%2F128x128%2Fcom.agateau.PixelWheels.png&w=128&q=100",
+      "status": "no"
+    },
+    "Anydesk": {
+      "type": "flatpak",
+      "downloadUrl": "com.anydesk.Anydesk",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fanydesk%2FAnydesk.desktop%2Fba59c6cc51321890c2139a534fbf9d5c%2Ficons%2F128x128%2Fcom.anydesk.Anydesk.desktop.png&w=128&q=100",
+      "status": "no"
+    },
+    "gdevelop": {
+      "type": "flatpak",
+      "downloadUrl": "io.gdevelop.ide",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fio%2Fgdevelop%2Fide%2Fc65f8e6287e3949d07a257799a2bdad9%2Ficons%2F128x128%2Fio.gdevelop.ide.png&w=128&q=100",
+      "status": "no"
+    },
+    "FileRoller": {
+      "type": "flatpak",
+      "downloadUrl": "org.gnome.FileRoller",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fgnome%2FFileRoller%2Fefaf8486bb79a0dc121805f037915172%2Ficons%2F128x128%2Forg.gnome.FileRoller.png&w=128&q=100",
+      "status": "no"
+    },
+    "sublimetext": {
+      "type": "flatpak",
+      "downloadUrl": "com.sublimetext.three",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Frepo%2Fappstream%2Fx86_64%2Ficons%2F128x128%2Fcom.sublimetext.three.png&w=128&q=100",
+      "status": "no"
+    },
+    "krita": {
+      "type": "flatpak",
+      "downloadUrl": "org.kde.krita",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fkde%2Fkrita%2Fb1bc28f8f4c7f639007e649a00b14201%2Ficons%2F128x128%2Forg.kde.krita.png&w=128&q=100",
+      "status": "no"
+    },
+    "duckstation": {
+      "type": "flatpak",
+      "downloadUrl": "org.duckstation.DuckStation",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fduckstation%2FDuckStation%2Fff9d180436efe9966ef0954a388cb888%2Ficons%2F128x128%2Forg.duckstation.DuckStation.png&w=128&q=100",
+      "status": "no"
+    },
+    "ppsspp": {
+      "type": "flatpak",
+      "downloadUrl": "org.ppsspp.PPSSPP",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fppsspp%2FPPSSPP%2Fcd7d2c7175435b4524b858caa3ec88a1%2Ficons%2F128x128%2Forg.ppsspp.PPSSPP.png&w=128&q=100",
+      "status": "no"
+    },
+    "obs": {
+      "type": "flatpak",
+      "downloadUrl": "com.obsproject.Studio",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fobsproject%2FStudio%2F16a13f36142cc10df4d7f551291cb844%2Ficons%2F128x128%2Fcom.obsproject.Studio.png&w=128&q=100",
+      "status": "no"
+    },
+    "zen_browser": {
+      "type": "flatpak",
+      "downloadUrl": "app.zen_browser.zen",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fapp%2Fzen_browser%2Fzen%2Fb19169c8bb2ba5ecffabcb6d6e2941cb%2Ficons%2F128x128%2Fapp.zen_browser.zen.png&w=128&q=100",
+      "status": "no"
+    },
+    "obsidian": {
+      "type": "flatpak",
+      "downloadUrl": "md.obsidian.Obsidian",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fmd%2Fobsidian%2FObsidian%2Fd1e132a5a248ff89d69e30aad13fb77f%2Ficons%2F128x128%2Fmd.obsidian.Obsidian.png&w=128&q=100",
+      "status": "no"
+    },
+    "VideoDownloader": {
+      "type": "flatpak",
+      "downloadUrl": "com.github.unrud.VideoDownloader",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fgithub%2Funrud.VideoDownloader%2Fb61c63cbb80d5ca56f6cf1af0a52558d%2Ficons%2F128x128%2Fcom.github.unrud.VideoDownloader.png&w=128&q=100",
+      "status": "no"
+    },
+    "Blender": {
+      "type": "flatpak",
+      "downloadUrl": "org.blender.Blender",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fblender%2FBlender%2F9d0c53e92d453902628405cf8bac9730%2Ficons%2F128x128%2Forg.blender.Blender.png&w=128&q=100",
+      "status": "no"
+    },
+    "MissionCenter": {
+      "type": "flatpak",
+      "downloadUrl": "io.missioncenter.MissionCenter",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fio%2Fmissioncenter%2FMissionCenter%2Ff382865557d55836ce4b6119f1b16090%2Ficons%2F128x128%2Fio.missioncenter.MissionCenter.png&w=128&q=100",
+      "status": "no"
+    },
+    "PCSX2": {
+      "type": "flatpak",
+      "downloadUrl": "net.pcsx2.PCSX2",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fnet%2Fpcsx2%2FPCSX2%2F6f62692ebeafeaa6e0ce5c8a729d1f45%2Ficons%2F128x128%2Fnet.pcsx2.PCSX2.png&w=128&q=100",
+      "status": "yes"
+    },
+    "Remmina": {
+      "type": "flatpak",
+      "downloadUrl": "org.remmina.Remmina",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fremmina%2FRemmina.desktop%2F7d67ac777e33325a2fc059efa2193668%2Ficons%2F128x128%2Forg.remmina.Remmina.desktop.png&w=128&q=100",
+      "status": "no"
+    },
+    "Wine": {
+      "type": "flatpak",
+      "downloadUrl": "org.winehq.Wine",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fwinehq%2FWine%2Fc990a95f888dad09e1c0a1b1347cc1c9%2Ficons%2F128x128%2Forg.winehq.Wine.png&w=128&q=100",
+      "status": "no"
+    },
+    "AndroidStudio": {
+      "type": "flatpak",
+      "downloadUrl": "com.google.AndroidStudio",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fgoogle%2FAndroidStudio.desktop%2Fa7dc032b59e94d84a765809aa7837130%2Ficons%2F128x128%2Fcom.google.AndroidStudio.desktop.png&w=128&q=100",
+      "status": "no"
+    },
+    "isoimagewriter": {
+      "type": "flatpak",
+      "downloadUrl": "org.kde.isoimagewriter",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fkde%2Fisoimagewriter.desktop%2Fa052116eefb8216006b82bff0585f4d4%2Ficons%2F128x128%2Forg.kde.isoimagewriter.desktop.png&w=128&q=100",
+      "status": "no"
+    },
+    "Filezilla": {
+      "type": "flatpak",
+      "downloadUrl": "org.filezillaproject.Filezilla",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Frepo%2Fappstream%2Fx86_64%2Ficons%2F128x128%2Forg.filezillaproject.Filezilla.png&w=128&q=100",
+      "status": "no"
+    },
+    "WineZGUI": {
+      "type": "flatpak",
+      "downloadUrl": "io.github.fastrizwaan.WineZGUI",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fio%2Fgithub%2Ffastrizwaan.WineZGUI%2Ffdd175e4c9bacbc51e9ab17373574b78%2Ficons%2F128x128%2Fio.github.fastrizwaan.WineZGUI.png&w=128&q=100",
+      "status": "no"
+    },
+    "Scratch": {
+      "type": "flatpak",
+      "downloadUrl": "edu.mit.Scratch",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Frepo%2Fappstream%2Fx86_64%2Ficons%2F128x128%2Fedu.mit.Scratch.png&w=128&q=100",
+      "status": "no"
+    },
+    "eovpn": {
+      "type": "flatpak",
+      "downloadUrl": "com.github.jkotra.eovpn",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fgithub%2Fjkotra.eovpn%2Fcb56fe0e4442f7d667922f26baa13d92%2Ficons%2F128x128%2Fcom.github.jkotra.eovpn.png&w=128&q=100",
+      "status": "no"
+    },
+    "Zenmap": {
+      "type": "flatpak",
+      "downloadUrl": "org.nmap.Zenmap",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fnmap%2FZenmap%2F893942f950b23e6af0de0a8d7880a1d5%2Ficons%2F128x128%2Forg.nmap.Zenmap.png&w=128&q=100",
+      "status": "no"
+    },
+    "BlackBox": {
+      "type": "flatpak",
+      "downloadUrl": "com.raggesilver.BlackBox",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fraggesilver%2FBlackBox%2F5ea8e6c79d6e7b5384973b766a059ac9%2Ficons%2F128x128%2Fcom.raggesilver.BlackBox.png&w=128&q=100",
+      "status": "yes"
+    },
+    "Builder": {
+      "type": "flatpak",
+      "downloadUrl": "org.gnome.Builder",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fgnome%2FBuilder%2Ff3d594145cf39f97aba5063cde79db88%2Ficons%2F128x128%2Forg.gnome.Builder.png&w=128&q=100",
+      "status": "no"
+    },
+    "CLion": {
+      "type": "flatpak",
+      "downloadUrl": "com.jetbrains.CLion",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fjetbrains%2FCLion%2F4b7b9420d7e80fbeec11f06034fdd099%2Ficons%2F128x128%2Fcom.jetbrains.CLion.png&w=128&q=100",
+      "status": "no"
+    },
+    "Gaphor": {
+      "type": "flatpak",
+      "downloadUrl": "org.gaphor.Gaphor",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fgaphor%2FGaphor%2Ffe044f791c22568e825f24d49b1cdebe%2Ficons%2F128x128%2Forg.gaphor.Gaphor.png&w=128&q=100",
+      "status": "no"
+    },
+    "ente": {
+      "type": "flatpak",
+      "downloadUrl": "io.ente.auth",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fio%2Fente%2Fauth%2F190f5ba391145ab6c22f80c0f7eca0de%2Ficons%2F128x128%2Fio.ente.auth.png&w=128&q=100",
+      "status": "no"
+    },
+    "yakuake": {
+      "type": "flatpak",
+      "downloadUrl": "org.kde.yakuake",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fkde%2Fyakuake.desktop%2Fd3a4cc133e2c221bdedfdf291f4a7005%2Ficons%2F128x128%2Forg.kde.yakuake.desktop.png&w=128&q=100",
+      "status": "no"
+    },
+    "Ghidra": {
+      "type": "flatpak",
+      "downloadUrl": "org.ghidra_sre.Ghidra",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fghidra_sre%2FGhidra%2F24f2630481761549ea2ba8a99ed5c090%2Ficons%2F128x128%2Forg.ghidra_sre.Ghidra.png&w=128&q=100",
+      "status": "no"
+    },
+    "vncviewer": {
+      "type": "flatpak",
+      "downloadUrl": "org.tigervnc.vncviewer",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Ftigervnc%2Fvncviewer%2F99c91d0697cba186c2bfeef8110d4118%2Ficons%2F128x128%2Forg.tigervnc.vncviewer.png&w=128&q=100",
+      "status": "no"
+    },
+    "sysd-manager": {
+      "type": "flatpak",
+      "downloadUrl": "io.github.plrigaux.sysd-manager",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fio%2Fgithub%2Fplrigaux.sysd-manager%2F7313a56bdd6249302fb453bfcceb3a01%2Ficons%2F128x128%2Fio.github.plrigaux.sysd-manager.png&w=128&q=100",
+      "status": "no"
+    },
+    "ZAP": {
+      "type": "flatpak",
+      "downloadUrl": "org.zaproxy.ZAP",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Fzaproxy%2FZAP%2Fc0f64017f2ca000e55960ff4ec91d490%2Ficons%2F128x128%2Forg.zaproxy.ZAP.png&w=128&q=100",
+      "status": "no"
+    },
+    "jadx": {
+      "type": "flatpak",
+      "downloadUrl": "com.github.skylot.jadx",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fgithub%2Fskylot.jadx%2Fe6461527bcc3399930750a5635b8db26%2Ficons%2F128x128%2Fcom.github.skylot.jadx.png&w=128&q=100",
+      "status": "no"
+    },
+    "stimulator": {
+      "type": "flatpak",
+      "downloadUrl": "io.github.sigmasd.stimulator",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fio%2Fgithub%2Fsigmasd.stimulator%2F9b78e4ebb2ef2fd35edb1b99b742a54a%2Ficons%2F128x128%2Fio.github.sigmasd.stimulator.png&w=128&q=100",
+      "status": "no"
+    },
+    "Bottles": {
+      "type": "flatpak",
+      "downloadUrl": "com.usebottles.bottles",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fusebottles%2Fbottles%2F2abe656cf3a3b4c2a69b5e695748a600%2Ficons%2F128x128%2Fcom.usebottles.bottles.png&w=128&q=100",
+      "status": "no"
+    },
+    "Steam": {
+      "type": "flatpak",
+      "downloadUrl": "com.valvesoftware.Steam",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fvalvesoftware%2FSteam%2Fb681fc80441a6843424afa8a28f9ef8e%2Ficons%2F128x128%2Fcom.valvesoftware.Steam.png&w=128&q=100",
+      "status": "no"
+    },
+    "LibreOffice": {
+      "type": "flatpak",
+      "downloadUrl": "org.libreoffice.LibreOffice",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Forg%2Flibreoffice%2FLibreOffice%2Faaf701e76bd5f42bf7efa0db5f5fc298%2Ficons%2F128x128%2Forg.libreoffice.LibreOffice.png&w=128&q=100",
+      "status": "no"
+    },
+    "Opera": {
+      "type": "flatpak",
+      "downloadUrl": "com.opera.Opera",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fopera%2FOpera%2F75656b35b7e52d3ef220f824b1087f69%2Ficons%2F128x128%2Fcom.opera.Opera.png&w=128&q=100",
+      "status": "no"
+    },
+    "Stremio": {
+      "type": "flatpak",
+      "downloadUrl": "com.stremio.Stremio",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fstremio%2FStremio%2F2970db66c5fb7d117634a23bd2946f26%2Ficons%2F128x128%2Fcom.stremio.Stremio.png&w=128&q=100",
+      "status": "no"
+    },
+    "Zandronum": {
+      "type": "flatpak",
+      "downloadUrl": "com.zandronum.Zandronum",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fzandronum%2FZandronum%2F4a46049db23327b30d1ed1a5eaf9cad4%2Ficons%2F128x128%2Fcom.zandronum.Zandronum.png&w=128&q=100",
+      "status": "no"
+    },
+    "whaler": {
+      "type": "flatpak",
+      "downloadUrl": "com.github.sdv43.whaler",
+      "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fgithub%2Fsdv43.whaler%2F62096c73469d64ff2b7d1522df45422d%2Ficons%2F128x128%2Fcom.github.sdv43.whaler.png&w=128&q=100",
+      "status": "no"
+    }
+  }
+]

@@ -8,31 +8,28 @@ function sleep(ms) {
 
 ipcRenderer.on('user-name', (event, output) => {
     const usernamediv = document.querySelector("#user_cleaner");
-    if(output)
-    {
+    if (output) {
         let username = '';
         const res = output.split(' ');
         let first = res[0][0];
         let last = res[1][0];
-        if(first)
-        {
-          username += first;
+        if (first) {
+            username += first;
         }
-        if(last)
-        {
-          username += last;
+        if (last) {
+            username += last;
         }
         usernamediv.textContent = username;
-        
+
     }
-    else
-    {
+    else {
         usernamediv.textContent = "?";
     }
 });
 
-ipcRenderer.on('auto_clean_res', (event, output) => 
-{
+ipcRenderer.on('auto_clean_res', (event, output) => {
+    const update = document.getElementById('update');
+    update.textContent = '0';
     remove_list = [];
     const folders = document.getElementById("folders");
     folders.innerHTML = '';
@@ -58,12 +55,10 @@ ipcRenderer.on('clean_with_list_res', (event, output) => {
 });
 
 
-function folder_selected(element)
-{
+function folder_selected(element) {
     const delete_button = document.getElementById('delete_button');
     let att = element.getAttribute('clicked');
-    if( att  === "off")
-    {
+    if (att === "off") {
         element.classList.remove("opacity-100");
         element.classList.remove("hover:opacity-80");
         element.classList.remove("hover:scale-[0.98]");
@@ -72,8 +67,7 @@ function folder_selected(element)
         element.setAttribute('clicked', 'on');
         remove_list.push(element.getAttribute('dir'))
     }
-    else
-    {
+    else {
         element.classList.add("opacity-100");
         element.classList.add("hover:opacity-80");
         element.classList.add("hover:scale-[0.98]");
@@ -83,18 +77,15 @@ function folder_selected(element)
         remove_list = remove_list.filter(item => item !== element.getAttribute('dir'));
 
     }
-    if(remove_list.length === 0)
-    {
+    if (remove_list.length === 0) {
         delete_button.classList.add('hidden');
     }
-    else
-    {
+    else {
         delete_button.classList.remove('hidden');
     }
     console.log(remove_list);
 }
-async function auto_clean()
-{
+async function auto_clean() {
     const loader = document.getElementById("loader");
     loader.classList.remove("hidden");
     const content = document.getElementById("content");
@@ -106,8 +97,7 @@ async function auto_clean()
 
 }
 
-async function clean_with_list()
-{
+async function clean_with_list() {
     const loader = document.getElementById("loader");
     loader.classList.remove("hidden");
     const content = document.getElementById("content");
@@ -125,7 +115,7 @@ ipcRenderer.on('files-res', (event, output) => {
     loader.classList.add("hidden");
     const content = document.getElementById("content");
     content.classList.remove("hidden")
-    res.map(el =>{
+    res.map(el => {
         let dir = el['directory'].split('/').at(-1);
         if (dir.length >= 9) {
             dir = dir.substr(0, 8);
@@ -134,9 +124,9 @@ ipcRenderer.on('files-res', (event, output) => {
         let child = document.createElement('span');
         child.setAttribute("size", el['size']);
         child.setAttribute("dir", el['directory']);
-        child.setAttribute("onclick",'folder_selected(this)');
-        child.setAttribute("clicked",'off');
-        child.className = "opacity-100 hover:opacity-80 h-[150px] flex-col hover:scale-[0.98] duration-200 transition-all cursor-pointer w-full flex justify-center items-center rounded-md"
+        child.setAttribute("onclick", 'folder_selected(this)');
+        child.setAttribute("clicked", 'off');
+        child.className = "opacity-100 hover:opacity-80 flex-col hover:scale-[0.98] duration-200 transition-all cursor-pointer w-full flex justify-center items-center rounded-md"
         const content = ` 
           <img style="filter: drop-shadow(5px 5px 10px rgba(101, 70, 26, 0.47)); " class= "relative w-full h-auto p-4" src="../icons/folder.png" alt="">
           <span class="flex-col absolute flex justify-center items-center">
@@ -150,18 +140,17 @@ ipcRenderer.on('files-res', (event, output) => {
 });
 
 ipcRenderer.on('storage-res', (event, output) => {
-    if(output)
-    {
+    if (output) {
         const total = output['size'];
         const used = output['used'];
-        const  available = output['available'];
-        const  perc = output['usagePercentage'];
+        const available = output['available'];
+        const perc = output['usagePercentage'];
         const storage = document.getElementById('storage');
         const used_div = document.getElementById('used');
         const total_div = document.getElementById('total');
         total_div.textContent = `${total} MB`
         used_div.textContent = `${used} MB`
-        storage.setAttribute('value', perc.replace('%',''))
+        storage.setAttribute('value', perc.replace('%', ''))
 
     }
 });
@@ -172,15 +161,22 @@ ipcRenderer.on('storage-res', (event, output) => {
 
 
 window.addEventListener('load', () => {
-    
+
     let path = window.location.href;
     let file = path.split("/").at(-1).replace(".html", "");
-    if(file === "cleaner")
-        {
-            ipcRenderer.send('user-name', 'username');
-            ipcRenderer.send('files', 'file');
-            ipcRenderer.send('storage', 'info');
-        }
-    
+    if (file === "cleaner") {
+        ipcRenderer.send('user-name', 'username');
+        ipcRenderer.send('files', 'file');
+        ipcRenderer.send('storage', 'info');
+    }
+
 });
+
+ipcRenderer.on('update-me', (event, output) => {
+    if (output) {
+        const update = document.getElementById('update');
+        update.textContent = output;
+    }
+});
+
 

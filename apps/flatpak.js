@@ -2,7 +2,7 @@ const { exec } = require("child_process");
 const os = require("os");
 const fs = require("fs");
 const { updateFile } = require("./vscode");
-const { copyFileIfExists , removeFile} = require("./utils");
+const { copyFileIfExists, removeFile } = require("./utils");
 const filePath = "./apps.json";
 
 // Function to add Flathub remote
@@ -84,10 +84,10 @@ function flatpak(action, info) {
   return new Promise(async (resolve, reject) => {
     try {
       if (action === "install") {
-        
-  
+
+
         console.log("Starting Flatpak installation...");
-        await addln(); 
+        await addln();
         await addflathub();
 
         const command = `flatpak install --user flathub ${info.downloadUrl} -y`;
@@ -125,7 +125,7 @@ function flatpak(action, info) {
         });
       } else if (action === "uninstall") {
         console.log("Starting Flatpak uninstallation...");
-        await addflathub(); 
+        await addflathub();
         const home = os.homedir();
         const to = `${home}/.local/share/applications/${info.downloadUrl}.desktop`
         console.log("Starting Flatpak uninstallation...");
