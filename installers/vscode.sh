@@ -8,7 +8,13 @@ binaryPath="$installDir/VSCode-linux-x64/bin/code"
 iconPath="$installDir/VSCode-linux-x64/resources/app/resources/linux/code.png"
 desktopFile="$HOME/.local/share/applications/vscode.desktop"
 aliasName="code"
-
+if [ -n "$ZSH_VERSION" ]; then
+    shell_rc="$HOME/.zshrc"
+elif [ -n "$BASH_VERSION" ]; then
+    shell_rc="$HOME/.bashrc"
+else
+    shell_rc="$HOME/.profile"
+fi
 # Step 1: Download VSCode
 echo "Downloading VSCode..."
 mkdir -p "$(dirname "$tmpFile")"
@@ -21,23 +27,13 @@ tar -xzf "$tmpFile" -C "$installDir" || { echo "Extraction failed!"; exit 1; }
 
 # Step 3: Create .desktop file
 echo "Creating .desktop launcher..."
-mkdir -p "$(dirname "$desktopFile")"
-cat > "$desktopFile" <<EOF
-[Desktop Entry]
-Name=Visual Studio Code
-Comment=Code Editing. Redefined.
-Exec=$binaryPath %F
-Icon=$iconPath
-Terminal=false
-Type=Application
-Categories=Development;IDE;
-StartupNotify=true
-EOF
-
+mkdir -p "$HOME/.local/share/applications/"
+echo -e "[Desktop Entry]\nName=Visual Studio Code\nComment=Code Editing.\nExec=$binaryPath\nIcon=$iconPath\nTerminal=false\nType=Application\n" \
+  > "$desktopFile"
 chmod +x "$desktopFile"
+chmod +x "$binaryPath"
 rm -rf $tmpFile
 # Step 4: Add alias
-shell_rc="$HOME/.bashrc"
 if ! grep -q "alias $aliasName=" "$shell_rc"; then
     echo "alias $aliasName=\"$binaryPath\"" >> "$shell_rc"
     echo "Alias '$aliasName' added to $shell_rc"
