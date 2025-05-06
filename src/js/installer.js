@@ -75,12 +75,9 @@ ipcRenderer.on('apps-res', (event, output) => {
                 child.setAttribute("id", "el")
                 button.setAttribute("name", key);
                 button.setAttribute("downloadUrl", element[key].downloadUrl);
-                button.setAttribute("installDir", element[key].installDir);
+                button.setAttribute("type", element[key].type);
                 button.setAttribute("icon", element[key].icon);
-                button.setAttribute("tmpFile", element[key].tmpFile);
-                button.setAttribute("binaryPath", element[key].binaryPath);
-                button.setAttribute("appdir", element[key].appdir);
-                button.setAttribute("alias", element[key].alias);
+                button.setAttribute("bashfile", element[key].bashfile);
                 button.setAttribute("status", element[key].status);
                 button.setAttribute("onclick", 'handle_app(this)');
                 screen.setAttribute("id", "screen")
@@ -130,12 +127,9 @@ function handle_app(button) {
     app = {
         id: button.getAttribute("name"),
         downloadUrl: button.getAttribute("downloadUrl"),
-        installDir: button.getAttribute("installDir"),
+        type: button.getAttribute("type"),
         icon: button.getAttribute("icon"),
-        tmpFile: button.getAttribute("tmpFile"),
-        binaryPath: button.getAttribute("binaryPath"),
-        appdir: button.getAttribute("appdir"),
-        alias: button.getAttribute("alias"),
+        bashfile: button.getAttribute("bashfile"),
         st: button.getAttribute("status"),
     }
     if (app) {
@@ -156,3 +150,11 @@ window.addEventListener('load', () => {
     }
 
 });
+
+ipcRenderer.on('update-me', (event, output) => {
+    if (output) {
+        const update = document.getElementById('update');
+        update.textContent = output;
+    }
+});
+

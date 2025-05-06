@@ -1,11 +1,10 @@
-const { exec } = require("child_process");
+const { exec, spawn } = require("child_process");
 const os = require("os");
 const fs = require("fs");
 const { updateFile } = require("./vscode");
 const { copyFileIfExists, removeFile } = require("./utils");
 const filePath = "./apps.json";
 
-// Function to add Flathub remote
 function addflathub() {
   return new Promise((resolve, reject) => {
     const flathubCommand =
@@ -22,7 +21,6 @@ function addflathub() {
   });
 }
 
-// Function to manage and create symbolic links
 function addln() {
   const homeDir = os.homedir();
   const user = os.userInfo();
@@ -80,69 +78,84 @@ function addln() {
   });
 }
 
-function flatpak(action, info) {
+function flatpak(action, info, event) {
   return new Promise(async (resolve, reject) => {
     try {
+      const home = os.homedir();
+      const user = os.userInfo();
+      const targetPath = `/goinfre/${user.username}/flatpak`;
+      const desktop = `${targetPath}/exports/share/applications/${info.downloadUrl}.desktop`;
+      const localDesktop = `${home}/.local/share/applications/${info.downloadUrl}.desktop`;
+
       if (action === "install") {
-
-
         console.log("Starting Flatpak installation...");
         await addln();
         await addflathub();
 
-        const command = `flatpak install --user flathub ${info.downloadUrl} -y`;
-        console.log(`Executing command: ${command}`);
+        const command = ["install", "--user", "flathub", info.downloadUrl, "-y"];
+        const proc = spawn("flatpak", command);
 
-        const process = exec(command, (error, stdout, stderr) => {
+        proc.stdout.on("data", (data) => {
+          const output = data.toString().trim();
+          if (output) {
+            console.log(output);
+            event.reply("update-me", output);
+          }
+        });
+
+        proc.stderr.on("data", (data) => {
+          const error = data.toString().trim();
           if (error) {
-            console.error(`Error executing command: ${command}\n${error.message}`);
-            return reject(error);
+            console.error(error);
+            event.reply("update-me", error);
           }
-          console.log(`Flatpak installed successfully: ${stdout}`);
-          resolve(stdout);
         });
 
-
-        process.stdout.on("data", (data) => {
-          console.log(`STDOUT: ${data}`);
-        });
-
-        process.stderr.on("data", (data) => {
-          console.error(`STDERR: ${data}`);
-        });
-
-        process.on("close", (code) => {
+        proc.on("close", (code) => {
           if (code === 0) {
-
-            updateFile(info.id, "yes", filePath);
+            event.reply("auto_clean_res", "done");
+            updateFile(info.id, "no", filePath);
+            copyFileIfExists(desktop, localDesktop);
+            resolve("Flatpak installation complete.");
+          } else {
+            reject(new Error(`Install exited with code: ${code}`));
           }
-          const user = os.userInfo();
-          const home = os.homedir();
-          const targetPath = `/goinfre/${user.username}/flatpak`;
-          const desktop = `${targetPath}/exports/share/applications/${info.downloadUrl}.desktop`
-          const to = `${home}/.local/share/applications/${info.downloadUrl}.desktop`
-          copyFileIfExists(desktop, to);
         });
+
       } else if (action === "uninstall") {
         console.log("Starting Flatpak uninstallation...");
         await addflathub();
-        const home = os.homedir();
-        const to = `${home}/.local/share/applications/${info.downloadUrl}.desktop`
-        console.log("Starting Flatpak uninstallation...");
-        removeFile(to)
-        const command = `flatpak uninstall --user flathub ${info.downloadUrl} -y`;
-        console.log(`Executing command: ${command}`);
 
-        exec(command, (error, stdout, stderr) => {
-          if (error) {
-            console.error(`Error executing command: ${command}\n${error.message}`);
-            return reject(error);
+        removeFile(localDesktop);
+
+        const command = ["uninstall", "--user", "flathub", info.downloadUrl, "-y"];
+        const proc = spawn("flatpak", command);
+
+        proc.stdout.on("data", (data) => {
+          const output = data.toString().trim();
+          if (output) {
+            console.log(output);
+            event.reply("update-me", output);
           }
-          console.log(`Flatpak uninstalled successfully: ${stdout}`);
-          resolve(stdout);
-
-          updateFile(info.id, "no", filePath);
         });
+
+        proc.stderr.on("data", (data) => {
+          const error = data.toString().trim();
+          if (error) {
+            console.error(error);
+            event.reply("update-me", error);
+          }
+        });
+
+        proc.on("close", (code) => {
+          if (code === 0) {
+            updateFile(info.id, "no", filePath);
+            resolve("Flatpak uninstalled successfully.");
+          } else {
+            reject(new Error(`Uninstall exited with code: ${code}`));
+          }
+        });
+
       } else {
         reject(new Error("Invalid action specified. Use 'install' or 'uninstall'."));
       }
@@ -152,5 +165,4 @@ function flatpak(action, info) {
     }
   });
 }
-
 module.exports = { flatpak };

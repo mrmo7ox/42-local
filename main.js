@@ -102,64 +102,42 @@ ipcMain.on("storage", (event, arg) => {
   });
 });
 
-
-
 ipcMain.on('apps-installer', async (event, arg) => {
   try {
+
     const info = JSON.parse(arg);
-    if (info.id === 'vscode') {
-      if (info.st === 'no') {
-        await vscode('install', info);
-        event.reply('apps-installer-res', 'done');
-      }
-      else if (info.st === 'yes') {
-        await vscode('uninstall', info);
-        event.reply('apps-installer-res', 'done');
-      }
-    } else if (info.id === 'zsh') {
-      if (info.st === 'no') {
-        await zsh('install', info)
-          .then(() => {
-            event.reply('apps-installer-res', 'done');
-          })
-          .catch((err) => {
-            console.log(err);
-          })
+    if (info.type === "bash") {
+      if (info.id === "vscode") {
+        if (info.status === "no") {
+          await vscode('install', info);
+          event.reply('apps-installer-res', 'done');
+        }
+        else if (info.status === "yes") {
+          await vscode('uninstall', info);
+          event.reply('apps-installer-res', 'done');
+        }
 
       }
-      else if (info.st === 'yes') {
-        await zsh('uninstall', info)
-          .then(() => {
-            event.reply('apps-installer-res', 'done');
-          })
-          .catch((err) => {
-            console.log(err);
-          })
-
-      }
+      
     }
-    else if (info.installDir === 'flatpak') {
+    else if (info.type === "flatpak") {
       if (info.st === 'no') {
-        await flatpak('install', info)
+        await flatpak('install', info, event)
           .then(() => {
-
-            console.log("test")
             event.reply('apps-installer-res', 'done');
           })
           .catch((err) => {
             console.log(err);
           })
-
       }
       else if (info.st === 'yes') {
-        await flatpak('uninstall', info)
+        await flatpak('uninstall', info, event)
           .then(() => {
             event.reply('apps-installer-res', 'done');
           })
           .catch((err) => {
             console.log(err);
           })
-
       }
     }
   } catch (err) {
