@@ -2,7 +2,7 @@ const { exec } = require('child_process');
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
-const { updateFile } = require('./vscode')
+const { updateFile } = require('./bash')
 
 async function installed_or_not() {
     const flatpakDir = path.join(os.homedir(), "goinfre/flatpak/app");
@@ -67,11 +67,11 @@ async function get_file_check() {
         const filePath = path.join("/", "tmp", "apps.json");
         const url = "https://raw.githubusercontent.com/mrmo7ox/42-local/master/apps.json";
 
-        if (fs.existsSync(filePath)) {
-            console.log("File already exists in /tmp:", filePath);
-            resolve();
-            return;
-        }
+        // if (fs.existsSync(filePath)) {
+        //     console.log("File already exists in /tmp:", filePath);
+        //     resolve();
+        //     return;
+        // }
 
         const cmd = `curl -o "${filePath}" ${url}`;
         console.log("Downloading file...");

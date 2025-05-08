@@ -1,7 +1,7 @@
 const { exec, spawn } = require("child_process");
 const os = require("os");
 const fs = require("fs");
-const { updateFile } = require("./vscode");
+const { updateFile } = require("./bash");
 const { copyFileIfExists, removeFile } = require("./utils");
 const filePath = "./apps.json";
 
