@@ -5,9 +5,9 @@ from datetime import datetime, timezone
 app = Flask(__name__)
 
 # 42 API credentials
-CLIENT_ID = "u-s4t2ud-6d6ad11eea6f64c88e3e868d4a2053654cd768065c2b728d56e22c6de6316f93"
-CLIENT_SECRET = "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"
-REDIRECT_URI = "http://localhost:5000/callback"
+# CLIENT_ID = "u-s4t2ud-6d6ad11eea6f64c88e3e868d4a2053654cd768065c2b728d56e22c6de6316f93"
+# CLIENT_SECRET = "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"
+# REDIRECT_URI = "http://localhost:5000/callback"
 
 # Authorization URLs
 AUTH_URL = "https://api.intra.42.fr/oauth/authorize"

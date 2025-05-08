@@ -6,6 +6,12 @@
       "bashfile": "./installers/vscode.sh",
       "status": "no"
     },
+    "bupsuite": {
+      "type": "bash",
+      "icon": "https://crackthelab.com/media/Subtopic/images/Bishop-Fox-Blog-Burp-Suite.png",
+      "bashfile": "./installers/burpusuite.sh",
+      "status": "no"
+    },
     "zsh": {
       "type": "bash",
       "icon": "https://i.ibb.co/j9CV0Gfv/New-Project.png",
@@ -58,7 +64,7 @@
       "type": "flatpak",
       "downloadUrl": "dev.zed.Zed",
       "icon": "https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fdev%2Fzed%2FZed%2Ff95d19b2552571157c075aa707bd3324%2Ficons%2F128x128%2Fdev.zed.Zed.png&w=128&q=100",
-      "status": "yes"
+      "status": "no"
     },
     "handbrake": {
       "type": "flatpak",

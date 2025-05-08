@@ -5,7 +5,7 @@ var path = require('path');
 const fs = require('fs');
 const { Menu, globalShortcut } = require('electron');
 const { autoUpdater } = require('electron-updater');
-const { vscode } = require('./apps/vscode')
+const { bash_installer } = require('./apps/vscode')
 const { getDiskSpaceForDevice, readJsonFile, removeFolder } = require('./apps/utils')
 const { zsh } = require('./apps/zsh')
 autoUpdater.logger = require("electron-log");
@@ -107,18 +107,15 @@ ipcMain.on('apps-installer', async (event, arg) => {
 
     const info = JSON.parse(arg);
     if (info.type === "bash") {
-      if (info.id === "vscode") {
-        if (info.status === "no") {
-          await vscode('install', info);
-          event.reply('apps-installer-res', 'done');
-        }
-        else if (info.status === "yes") {
-          await vscode('uninstall', info);
-          event.reply('apps-installer-res', 'done');
-        }
 
+      if (info.status === "no") {
+        await bash_installer('install', info);
+        event.reply('apps-installer-res', 'done');
       }
-      
+      else if (info.status === "yes") {
+        await bash_installer('uninstall', info);
+        event.reply('apps-installer-res', 'done');
+      }
     }
     else if (info.type === "flatpak") {
       if (info.st === 'no') {

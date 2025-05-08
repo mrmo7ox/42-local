@@ -21,9 +21,9 @@ function updateFile(name, n_status, filePath) {
 
 const { exec } = require('child_process');
 
-function vscode(event) {
+function bash_installer(info, event) {
   return new Promise((resolve, reject) => {
-    let cmd = "./installers/vscode.sh";
+    let cmd = `${info.id}`;
 
     const process = exec(cmd);
 
@@ -51,10 +51,10 @@ function vscode(event) {
         reject(`Process exited with code: ${code}`);
       }
     });
-    
+
   });
 }
 
 
 
-module.exports = { vscode, updateFile };
+module.exports = { bash_installer, updateFile };
