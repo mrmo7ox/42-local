@@ -44,8 +44,7 @@ function bash_installer(mode, event, info) {
 
     process.on('close', (code) => {
       if (code === 0) {
-        resolve('Cleaning finished successfully.');
-        event.reply("auto_clean_res", 'done');
+        resolve('installing finished successfully.');
       } else {
         reject(`Process exited with code: ${code}`);
       }

@@ -137,7 +137,8 @@ ipcMain.on('apps-installer', async (event, arg) => {
       }
     }
   } catch (err) {
-    console.error(`Error handling IPC event: ${err.message}`);
+    event.reply('apps-installer-res', 'done');
+
   }
 });
 

@@ -6,6 +6,12 @@
       "bashfile": "./installers/vscode.sh",
       "status": "no"
     },
+    "nvm": {
+      "type": "bash",
+      "icon": "https://static-00.iconduck.com/assets.00/node-js-icon-1817x2048-g8tzf91e.png",
+      "bashfile": "./installers/nvm.sh",
+      "status": "no"
+    },
     "burpsuite": {
       "type": "bash",
       "icon": "https://crackthelab.com/media/Subtopic/images/Bishop-Fox-Blog-Burp-Suite.png",
