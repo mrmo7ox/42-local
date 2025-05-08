@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { exec } = require('child_process');
 
 
 
@@ -10,7 +11,7 @@ function updateFile(name, n_status, filePath) {
     content.forEach((item) => {
       if (item[name]) {
         item[name].status = n_status;
-        console.log(`Updated status for ${name}:`, item[name].status);
+        // console.log(`Updated status for ${name}:`, item[name].status);
       }
     });
     fs.writeFileSync(filePath, JSON.stringify(content, null, 2), 'utf8');
@@ -19,12 +20,10 @@ function updateFile(name, n_status, filePath) {
   }
 }
 
-const { exec } = require('child_process');
 
-function bash_installer(info, event) {
+function bash_installer(mode, event, info) {
   return new Promise((resolve, reject) => {
-    let cmd = `${info.id}`;
-
+    let cmd = `./installers/${info.id}.sh`;
     const process = exec(cmd);
 
     process.stdout.on('data', (data) => {

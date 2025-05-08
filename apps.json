@@ -6,7 +6,7 @@
       "bashfile": "./installers/vscode.sh",
       "status": "no"
     },
-    "bupsuite": {
+    "burpsuite": {
       "type": "bash",
       "icon": "https://crackthelab.com/media/Subtopic/images/Bishop-Fox-Blog-Burp-Suite.png",
       "bashfile": "./installers/burp.sh",

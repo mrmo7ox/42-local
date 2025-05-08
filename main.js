@@ -107,13 +107,12 @@ ipcMain.on('apps-installer', async (event, arg) => {
 
     const info = JSON.parse(arg);
     if (info.type === "bash") {
-
-      if (info.status === "no") {
-        await bash_installer('install', info);
+      if (info.st === "no") {
+        await bash_installer('install', event, info);
         event.reply('apps-installer-res', 'done');
       }
-      else if (info.status === "yes") {
-        await bash_installer('uninstall', info);
+      else if (info.st === "yes") {
+        await bash_installer('uninstall', event, info);
         event.reply('apps-installer-res', 'done');
       }
     }

@@ -35,8 +35,11 @@ if command -v nvm >/dev/null 2>&1; then
     echo "[✓] NVM installed successfully"
     echo "[*] Installing latest Node.js..."
     nvm install node
+
+    echo "[*] Updating npm to latest version..."
+    npm install -g npm
+
     echo "[*] Done! You can now use 'nvm use <version>'"
 else
     echo "[✗] NVM installation failed"
 fi
-

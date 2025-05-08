@@ -30,7 +30,6 @@ async function installed_or_not() {
             if (folders.length === 0) {
                 for (const item of result) {
                     for (const key of Object.keys(item)) {
-                        console.log(key);
                         if (key !== "zsh" && key !== "vscode") {
                             updateFile(key, "no", jsonFilePath);
                         }
@@ -42,12 +41,12 @@ async function installed_or_not() {
                 for (const folder of folders) {
                     for (const item of result) {
                         for (const key of Object.keys(item)) {
-                            console.log(key);
-                            if (key === "vscode" || key === "zsh")
+                            if (item[key]["type"] === "bash") {
                                 continue;
-                            if (item[key]["type"] === "bash" && item[key]["downloadUrl"] === folder) {
+                            }
+                            else if (item[key]["type"] === "flatpak" && item[key]["downloadUrl"] === folder) {
                                 updateFile(key, "yes", jsonFilePath);
-                            } else if (item[key]["type"] === "bash" && item[key]["downloadUrl"] !== folder) {
+                            } else if (item[key]["type"] === "flatpak" && item[key]["downloadUrl"] !== folder) {
                                 updateFile(key, "no", jsonFilePath);
                             }
                         }
