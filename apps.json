@@ -6,6 +6,12 @@
       "bashfile": "./installers/vscode.sh",
       "status": "no"
     },
+    "norm": {
+      "type": "bash",
+      "icon": "https://keyhr.gallerycdn.vsassets.io/extensions/keyhr/42-c-format/0.0.5/1660566633484/Microsoft.VisualStudio.Services.Icons.Default",
+      "bashfile": "./installers/norm.sh",
+      "status": "no"
+    },
     "nvm": {
       "type": "bash",
       "icon": "https://static-00.iconduck.com/assets.00/node-js-icon-1817x2048-g8tzf91e.png",
@@ -16,12 +22,6 @@
       "type": "bash",
       "icon": "https://crackthelab.com/media/Subtopic/images/Bishop-Fox-Blog-Burp-Suite.png",
       "bashfile": "./installers/burp.sh",
-      "status": "no"
-    },
-    "zsh": {
-      "type": "bash",
-      "icon": "https://i.ibb.co/j9CV0Gfv/New-Project.png",
-      "bashfile": "./installers/zsh.sh",
       "status": "no"
     },
     "Extension Manager": {

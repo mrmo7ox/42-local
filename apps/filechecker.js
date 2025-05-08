@@ -7,12 +7,11 @@ const { updateFile } = require('./bash')
 async function installed_or_not() {
     const flatpakDir = path.join(os.homedir(), "goinfre/flatpak/app");
     const vscodeDir = path.join(os.homedir(), ".var/app/vscode_stable");
+    const burpdir = path.join(os.homedir(), ".burp");
     console.log(fs.existsSync(flatpakDir));
     const jsonFilePath = "/tmp/apps.json";
 
     try {
-
-
         const data = await fs.promises.readFile(jsonFilePath, "utf8");
         const result = JSON.parse(data);
         // hadi lvscode safii 
@@ -20,6 +19,11 @@ async function installed_or_not() {
             for (const key of Object.keys(item)) {
                 if (key === "vscode") {
                     const status = fs.existsSync(vscodeDir) ? "yes" : "no";
+                    updateFile(key, status, jsonFilePath);
+                    break;
+                }
+                if (key === "burpsuite") {
+                    const status = fs.existsSync(burpdir) ? "yes" : "no";
                     updateFile(key, status, jsonFilePath);
                     break;
                 }
@@ -66,12 +70,6 @@ async function get_file_check() {
     return new Promise((resolve, reject) => {
         const filePath = path.join("/", "tmp", "apps.json");
         const url = "https://raw.githubusercontent.com/mrmo7ox/42-local/master/apps.json";
-
-        // if (fs.existsSync(filePath)) {
-        //     console.log("File already exists in /tmp:", filePath);
-        //     resolve();
-        //     return;
-        // }
 
         const cmd = `curl -o "${filePath}" ${url}`;
         console.log("Downloading file...");

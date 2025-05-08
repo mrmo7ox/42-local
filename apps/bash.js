@@ -11,7 +11,6 @@ function updateFile(name, n_status, filePath) {
     content.forEach((item) => {
       if (item[name]) {
         item[name].status = n_status;
-        // console.log(`Updated status for ${name}:`, item[name].status);
       }
     });
     fs.writeFileSync(filePath, JSON.stringify(content, null, 2), 'utf8');
@@ -53,6 +52,38 @@ function bash_installer(mode, event, info) {
   });
 }
 
+function exec_update(cmd_file, event) {
+  return new Promise((resolve, reject) => {
+    let cmd = `./installers/${cmd_file}.sh`;
+    const process = exec(cmd);
+
+    process.stdout.on('data', (data) => {
+      const output = data.toString().trim();
+      console.log(output);
+      if (output) {
+        event.reply("update-me", output);
+      }
+    });
+
+    process.stderr.on('data', (data) => {
+      const error = data.toString().trim();
+      console.log(error)
+      if (error) {
+        event.reply("update-me", error);
+      }
+    });
+
+    process.on('close', (code) => {
+      if (code === 0) {
+        resolve('installing finished successfully.');
+      } else {
+        reject(`Process exited with code: ${code}`);
+      }
+    });
+
+  });
+}
 
 
-module.exports = { bash_installer, updateFile };
+
+module.exports = { exec_update, bash_installer, updateFile };
