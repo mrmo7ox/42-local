@@ -8,8 +8,8 @@
     },
     "bupsuite": {
       "type": "bash",
-      "icon": "https://icons.veryicon.com/png/o/business/vscode-program-item-icon/vscode.png",
-      "bashfile": "./installers/vscode.sh",
+      "icon": "https://crackthelab.com/media/Subtopic/images/Bishop-Fox-Blog-Burp-Suite.png",
+      "bashfile": "./installers/burp.sh",
       "status": "no"
     },
     "zsh": {
