@@ -15,12 +15,13 @@ async function installed_or_not() {
 
         const data = await fs.promises.readFile(jsonFilePath, "utf8");
         const result = JSON.parse(data);
-
+        // hadi lvscode safii 
         for (const item of result) {
             for (const key of Object.keys(item)) {
                 if (key === "vscode") {
                     const status = fs.existsSync(vscodeDir) ? "yes" : "no";
                     updateFile(key, status, jsonFilePath);
+                    break;
                 }
             }
         }
@@ -36,14 +37,17 @@ async function installed_or_not() {
                     }
                 }
             }
+
             else {
                 for (const folder of folders) {
                     for (const item of result) {
                         for (const key of Object.keys(item)) {
                             console.log(key);
-                            if (key !== "zsh" && item[key]["downloadUrl"] === folder) {
+                            if (key === "vscode" || key === "zsh")
+                                continue;
+                            if (item[key]["type"] === "bash" && item[key]["downloadUrl"] === folder) {
                                 updateFile(key, "yes", jsonFilePath);
-                            } else if (key !== "zsh" && item[key]["downloadUrl"] !== folder) {
+                            } else if (item[key]["type"] === "bash" && item[key]["downloadUrl"] !== folder) {
                                 updateFile(key, "no", jsonFilePath);
                             }
                         }
