@@ -20,7 +20,7 @@
     },
     "burpsuite": {
       "type": "bash",
-      "icon": "https://crackthelab.com/media/Subtopic/images/Bishop-Fox-Blog-Burp-Suite.png",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BurpSuite_Comunity_Edition.svg/800px-BurpSuite_Comunity_Edition.svg.png",
       "bashfile": "./installers/burp.sh",
       "status": "no"
     },
