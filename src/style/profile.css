@@ -1,45 +1,24 @@
-@keyframes bounce
-{
-    0%, 100% 
-    {
-        transform: translateY(0);
-    }
-    50% 
-    {
-        transform: translateY(-20px);
-    }
-}
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-#user
-{
+#user {
     animation: bounce 2s infinite ease-in-out;
 }
-#bg
-{
-    background: linear-gradient(90deg,rgb(41, 43, 55) 0%, rgba(43, 45, 54, 1) 100%);
-	animation: gradient 15s ease infinite;
+
+#bg {
+    background: linear-gradient(90deg, rgb(41, 43, 55) 0%, rgba(43, 45, 54, 1) 100%);
+    animation: gradient 15s ease infinite;
 }
+
 @font-face {
     font-family: 'Ubuntu';
     src: url('../fonts/Ubuntu-Medium.ttf') format('truetype');
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'Ubuntu';
     src: url('../fonts/Ubuntu-Bold.ttf') format('truetype');
     font-weight: bold;
 }
+
 body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: normal;
@@ -47,20 +26,19 @@ body {
 
 /* cleaner page */
 
-@keyframes bounce_cleaner
-{
-    0%, 100% 
-    {
+@keyframes bounce_cleaner {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
-    50% 
-    {
+
+    50% {
         transform: translateY(-2px);
     }
 }
 
-#user[bounce="-5" ]
-{
+#user[bounce="-5"] {
     animation: bounce_cleaner 2s infinite ease-in-out;
 }
 
@@ -69,6 +47,7 @@ body {
     display: inline-block;
     cursor: pointer;
 }
+
 .tooltip-container .tooltip-text {
     visibility: hidden;
     opacity: 0;
@@ -78,7 +57,7 @@ body {
     padding: 5px;
     border-radius: 5px;
     position: absolute;
-    bottom: 125%; 
+    bottom: 125%;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;

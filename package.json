@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.4",
+    "axios": "^1.9.0",
     "create-desktop-shortcuts": "^1.11.1",
     "follow-redirects": "^1.15.9",
     "nodemon": "^3.1.9",

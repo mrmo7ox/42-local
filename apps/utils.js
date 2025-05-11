@@ -24,7 +24,7 @@ function downloadFile(url, outputFilePath) {
       fileStream.on('finish', () => {
         fileStream.close(() => {
           console.log(`Downloaded file saved to ${outputFilePath}`);
-          resolve(true); 
+          resolve(true);
         });
       });
 
@@ -42,7 +42,7 @@ function downloadFile(url, outputFilePath) {
 async function extractTarFile(tarFilePath, outputDir) {
   try {
     if (!fs.existsSync(outputDir)) {
-      fs.mkdirSync(outputDir, { recursive: true }); 
+      fs.mkdirSync(outputDir, { recursive: true });
     }
 
     await tar.x({
@@ -82,11 +82,11 @@ async function findAndReplaceText(filePath, textToFind, replacementText) {
   fss = fs.promises;
   try {
     console.log(`Reading file: ${filePath}`);
-    const fileContent = await fss.readFile(filePath, 'utf8'); 
+    const fileContent = await fss.readFile(filePath, 'utf8');
     console.log(fileContent);
     const updatedContent = fileContent.replace(new RegExp(textToFind, 'g'), replacementText);
 
-    await fss.writeFile(filePath, updatedContent, 'utf8'); 
+    await fss.writeFile(filePath, updatedContent, 'utf8');
 
     console.log(`Replaced all occurrences of "${textToFind}" with "${replacementText}"`);
   } catch (err) {
@@ -95,10 +95,10 @@ async function findAndReplaceText(filePath, textToFind, replacementText) {
 }
 function removeFolder(folderPath) {
   try {
-      fs.rmSync(folderPath, { recursive: true, force: true });
-      console.log(`Folder removed: ${folderPath}`);
+    fs.rmSync(folderPath, { recursive: true, force: true });
+    console.log(`Folder removed: ${folderPath}`);
   } catch (err) {
-      console.error(`Error removing folder: ${err.message}`);
+    console.error(`Error removing folder: ${err.message}`);
   }
 }
 
@@ -129,7 +129,7 @@ function readJsonFile(filePath, callback) {
 }
 
 function getDiskSpaceForDevice(device, callback) {
-  exec(`df -m | grep ${device}`, (error, stdout, stderr) => {
+  exec(`df -m | grep /home/$USER`, (error, stdout, stderr) => {
     if (error) {
       console.error(`Error fetching disk space: ${error.message}`);
       callback(null);
@@ -177,4 +177,4 @@ function copyFileIfExists(source, destination) {
     });
   });
 }
-module.exports = {copyFileIfExists, getDiskSpaceForDevice, readJsonFile,  removeFolder, removeFile, extractTarFile, downloadFile, appendTextToFile, creatTextToFile, findAndReplaceText};
+module.exports = { copyFileIfExists, getDiskSpaceForDevice, readJsonFile, removeFolder, removeFile, extractTarFile, downloadFile, appendTextToFile, creatTextToFile, findAndReplaceText };

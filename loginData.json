@@ -1,0 +1,2493 @@
+{
+  "logged_in": true,
+  "teams": [
+    {
+      "closed?": true,
+      "closed_at": "2025-05-11T16:46:11.202Z",
+      "created_at": "2025-05-11T16:27:02.718Z",
+      "final_mark": null,
+      "id": 6556704,
+      "locked?": true,
+      "locked_at": "2025-05-11T16:38:32.702Z",
+      "name": "https://www.youtube.com/watch?v=CB42Hz349JM",
+      "project_gitlab_path": "pedago_world/42-cursus/inner-circle/minishell",
+      "project_id": 1331,
+      "project_session_id": 5179,
+      "repo_url": "git@vogsphere-v2.1337.ma:vogsphere/intra-uuid-fb7f5bf1-cdf6-4ac7-a8ec-9ce82d9554ab-6556704-ataai",
+      "repo_uuid": "intra-uuid-fb7f5bf1-cdf6-4ac7-a8ec-9ce82d9554ab-6556704-ataai",
+      "scale_teams": [
+        {
+          "begin_at": "2025-05-11T20:30:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-11T18:46:14.662Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080829,
+          "questions_with_answers": [],
+          "scale_id": 35397,
+          "truant": {},
+          "updated_at": "2025-05-11T18:46:14.662Z"
+        },
+        {
+          "begin_at": "2025-05-11T18:30:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 190156,
+              "login": "ariyad",
+              "url": "https://api.intra.42.fr/v2/users/ariyad"
+            },
+            {
+              "id": 190157,
+              "login": "ataai",
+              "url": "https://api.intra.42.fr/v2/users/ataai"
+            }
+          ],
+          "corrector": {
+            "id": 166296,
+            "login": "alaassir",
+            "url": "https://api.intra.42.fr/v2/users/alaassir"
+          },
+          "created_at": "2025-05-11T16:46:38.543Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080724,
+          "questions_with_answers": [],
+          "scale_id": 35397,
+          "truant": {
+            "id": 190157,
+            "login": "ataai",
+            "url": "https://api.intra.42.fr/v2/users/ataai"
+          },
+          "updated_at": "2025-05-11T18:45:40.794Z"
+        },
+        {
+          "begin_at": "2025-05-11T19:00:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 190156,
+              "login": "ariyad",
+              "url": "https://api.intra.42.fr/v2/users/ariyad"
+            },
+            {
+              "id": 190157,
+              "login": "ataai",
+              "url": "https://api.intra.42.fr/v2/users/ataai"
+            }
+          ],
+          "corrector": {
+            "id": 189701,
+            "login": "tbenzaid",
+            "url": "https://api.intra.42.fr/v2/users/tbenzaid"
+          },
+          "created_at": "2025-05-11T18:14:00.333Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080804,
+          "questions_with_answers": [],
+          "scale_id": 35397,
+          "truant": {},
+          "updated_at": "2025-05-11T18:14:00.333Z"
+        },
+        {
+          "begin_at": "2025-05-11T17:45:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 190156,
+              "login": "ariyad",
+              "url": "https://api.intra.42.fr/v2/users/ariyad"
+            },
+            {
+              "id": 190157,
+              "login": "ataai",
+              "url": "https://api.intra.42.fr/v2/users/ataai"
+            }
+          ],
+          "corrector": {
+            "id": 98784,
+            "login": "abouazi",
+            "url": "https://api.intra.42.fr/v2/users/abouazi"
+          },
+          "created_at": "2025-05-11T16:46:51.290Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080725,
+          "questions_with_answers": [],
+          "scale_id": 35397,
+          "truant": {
+            "id": 190157,
+            "login": "ataai",
+            "url": "https://api.intra.42.fr/v2/users/ataai"
+          },
+          "updated_at": "2025-05-11T18:13:28.865Z"
+        },
+        {
+          "begin_at": "2025-05-11T18:45:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 190156,
+              "login": "ariyad",
+              "url": "https://api.intra.42.fr/v2/users/ariyad"
+            },
+            {
+              "id": 190157,
+              "login": "ataai",
+              "url": "https://api.intra.42.fr/v2/users/ataai"
+            }
+          ],
+          "corrector": {
+            "id": 155777,
+            "login": "mzeggaf",
+            "url": "https://api.intra.42.fr/v2/users/mzeggaf"
+          },
+          "created_at": "2025-05-11T17:37:23.530Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080764,
+          "questions_with_answers": [],
+          "scale_id": 35397,
+          "truant": {},
+          "updated_at": "2025-05-11T17:37:23.530Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-11T18:46:14.796Z",
+      "url": "https://api.intra.42.fr/v2/teams/6556704",
+      "users": [
+        {
+          "id": 190156,
+          "leader": false,
+          "login": "ariyad",
+          "occurrence": 2,
+          "projects_user_id": 4278805,
+          "url": "https://api.intra.42.fr/v2/users/ariyad",
+          "validated": true
+        },
+        {
+          "id": 190157,
+          "leader": true,
+          "login": "ataai",
+          "occurrence": 2,
+          "projects_user_id": 4278793,
+          "url": "https://api.intra.42.fr/v2/users/ataai",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-11T17:38:11.749Z",
+      "created_at": "2025-05-11T15:48:49.765Z",
+      "final_mark": null,
+      "id": 6556682,
+      "locked?": true,
+      "locked_at": "2025-05-11T15:48:49.813Z",
+      "name": "tamounir's group-1",
+      "project_gitlab_path": "pedago_world/42-cursus/inner-circle/philosophers",
+      "project_id": 1334,
+      "project_session_id": 5180,
+      "repo_url": "git@vogsphere-v2.1337.ma:vogsphere/intra-uuid-1ad65269-a030-4ce7-b67e-14322daf1f8d-6556682-tamounir",
+      "repo_uuid": "intra-uuid-1ad65269-a030-4ce7-b67e-14322daf1f8d-6556682-tamounir",
+      "scale_teams": [
+        {
+          "begin_at": "2025-05-11T22:30:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-11T17:38:20.871Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080780,
+          "questions_with_answers": [],
+          "scale_id": 38863,
+          "truant": {},
+          "updated_at": "2025-05-11T17:38:20.871Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-11T17:38:20.956Z",
+      "url": "https://api.intra.42.fr/v2/teams/6556682",
+      "users": [
+        {
+          "id": 195191,
+          "leader": true,
+          "login": "tamounir",
+          "occurrence": 1,
+          "projects_user_id": 4194150,
+          "url": "https://api.intra.42.fr/v2/users/tamounir",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-11T14:28:45.506Z",
+      "created_at": "2025-05-11T11:28:57.139Z",
+      "final_mark": null,
+      "id": 6556515,
+      "locked?": true,
+      "locked_at": "2025-05-11T11:28:57.173Z",
+      "name": "hben-laz's group-2",
+      "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-06",
+      "project_id": 1344,
+      "project_session_id": 3330,
+      "repo_url": "git@vogsphere-v2.1337.ma:vogsphere/intra-uuid-715f0a79-79e3-4d92-be5d-2083f7a212f8-6556515-hben-laz",
+      "repo_uuid": "intra-uuid-715f0a79-79e3-4d92-be5d-2083f7a212f8-6556515-hben-laz",
+      "scale_teams": [
+        {
+          "begin_at": "2025-05-11T20:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-11T18:29:27.618Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080819,
+          "questions_with_answers": [],
+          "scale_id": 43963,
+          "truant": {},
+          "updated_at": "2025-05-11T18:29:27.618Z"
+        },
+        {
+          "begin_at": "2025-05-11T15:00:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 155885,
+              "login": "hben-laz",
+              "url": "https://api.intra.42.fr/v2/users/hben-laz"
+            }
+          ],
+          "corrector": {
+            "id": 98784,
+            "login": "abouazi",
+            "url": "https://api.intra.42.fr/v2/users/abouazi"
+          },
+          "created_at": "2025-05-11T14:29:09.517Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080568,
+          "questions_with_answers": [],
+          "scale_id": 43963,
+          "truant": {
+            "id": 155885,
+            "login": "hben-laz",
+            "url": "https://api.intra.42.fr/v2/users/hben-laz"
+          },
+          "updated_at": "2025-05-11T18:24:37.729Z"
+        },
+        {
+          "begin_at": "2025-05-11T17:30:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 155885,
+              "login": "hben-laz",
+              "url": "https://api.intra.42.fr/v2/users/hben-laz"
+            }
+          ],
+          "corrector": {
+            "id": 165580,
+            "login": "namrene",
+            "url": "https://api.intra.42.fr/v2/users/namrene"
+          },
+          "created_at": "2025-05-11T16:43:15.409Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080720,
+          "questions_with_answers": [],
+          "scale_id": 43963,
+          "truant": {},
+          "updated_at": "2025-05-11T16:43:15.409Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-11T18:29:27.769Z",
+      "url": "https://api.intra.42.fr/v2/teams/6556515",
+      "users": [
+        {
+          "id": 155885,
+          "leader": true,
+          "login": "hben-laz",
+          "occurrence": 2,
+          "projects_user_id": 4284778,
+          "url": "https://api.intra.42.fr/v2/users/hben-laz",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-11T02:08:19.751Z",
+      "created_at": "2025-05-11T01:38:26.845Z",
+      "final_mark": null,
+      "id": 6556315,
+      "locked?": true,
+      "locked_at": "2025-05-11T01:40:37.095Z",
+      "name": "la ballena seguena agua la misma cancion",
+      "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cub3d",
+      "project_id": 1326,
+      "project_session_id": 6888,
+      "repo_url": "git@vogsphere-v2.1337.ma:vogsphere/intra-uuid-99199ec8-5e45-4709-bf84-bd1cdfc9df62-6556315-rallali",
+      "repo_uuid": "intra-uuid-99199ec8-5e45-4709-bf84-bd1cdfc9df62-6556315-rallali",
+      "scale_teams": [
+        {
+          "begin_at": "2025-05-11T05:30:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 165729,
+              "login": "rallali",
+              "url": "https://api.intra.42.fr/v2/users/rallali"
+            },
+            {
+              "id": 165734,
+              "login": "eel-alao",
+              "url": "https://api.intra.42.fr/v2/users/eel-alao"
+            }
+          ],
+          "corrector": {
+            "id": 155896,
+            "login": "oel-feng",
+            "url": "https://api.intra.42.fr/v2/users/oel-feng"
+          },
+          "created_at": "2025-05-11T03:28:49.200Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080012,
+          "questions_with_answers": [],
+          "scale_id": 34952,
+          "truant": {},
+          "updated_at": "2025-05-11T03:28:49.200Z"
+        },
+        {
+          "begin_at": "2025-05-11T04:45:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 165729,
+              "login": "rallali",
+              "url": "https://api.intra.42.fr/v2/users/rallali"
+            },
+            {
+              "id": 165734,
+              "login": "eel-alao",
+              "url": "https://api.intra.42.fr/v2/users/eel-alao"
+            }
+          ],
+          "corrector": {
+            "id": 165701,
+            "login": "aben-hss",
+            "url": "https://api.intra.42.fr/v2/users/aben-hss"
+          },
+          "created_at": "2025-05-11T02:34:26.234Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8079999,
+          "questions_with_answers": [],
+          "scale_id": 34952,
+          "truant": {},
+          "updated_at": "2025-05-11T02:34:26.234Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-11T03:28:49.318Z",
+      "url": "https://api.intra.42.fr/v2/teams/6556315",
+      "users": [
+        {
+          "id": 165729,
+          "leader": true,
+          "login": "rallali",
+          "occurrence": 0,
+          "projects_user_id": 4217381,
+          "url": "https://api.intra.42.fr/v2/users/rallali",
+          "validated": true
+        },
+        {
+          "id": 165734,
+          "leader": false,
+          "login": "eel-alao",
+          "occurrence": 0,
+          "projects_user_id": 4220738,
+          "url": "https://api.intra.42.fr/v2/users/eel-alao",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-11T13:49:49.219Z",
+      "created_at": "2025-05-10T13:49:47.560Z",
+      "final_mark": null,
+      "id": 6555924,
+      "locked?": true,
+      "locked_at": "2025-05-10T13:49:47.660Z",
+      "name": "oufisaou's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/piscine-pedago/mobile/module_00",
+      "project_id": 2354,
+      "project_session_id": 9643,
+      "repo_url": "git@vogsphere-v2.1337.ma:vogsphere/intra-uuid-1fb6b8e9-982a-4953-b88a-632eaaa70204-6555924-oufisaou",
+      "repo_uuid": "intra-uuid-1fb6b8e9-982a-4953-b88a-632eaaa70204-6555924-oufisaou",
+      "scale_teams": [],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": "2025-05-13T13:49:49.219Z",
+      "updated_at": "2025-05-11T13:49:49.286Z",
+      "url": "https://api.intra.42.fr/v2/teams/6555924",
+      "users": [
+        {
+          "id": 94350,
+          "leader": true,
+          "login": "oufisaou",
+          "occurrence": 0,
+          "projects_user_id": 4287508,
+          "url": "https://api.intra.42.fr/v2/users/oufisaou",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-10T13:58:25.474Z",
+      "created_at": "2025-05-10T13:34:52.535Z",
+      "final_mark": null,
+      "id": 6555912,
+      "locked?": true,
+      "locked_at": "2025-05-10T13:38:52.125Z",
+      "name": "Alo",
+      "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cub3d",
+      "project_id": 1326,
+      "project_session_id": 6888,
+      "repo_url": "git@vogsphere-v2.1337.ma:vogsphere/intra-uuid-f9f62e9a-2bec-46df-9b31-dfbe80b92730-6555912-amokhtar",
+      "repo_uuid": "intra-uuid-f9f62e9a-2bec-46df-9b31-dfbe80b92730-6555912-amokhtar",
+      "scale_teams": [],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-10T13:58:25.479Z",
+      "url": "https://api.intra.42.fr/v2/teams/6555912",
+      "users": [
+        {
+          "id": 155886,
+          "leader": true,
+          "login": "amokhtar",
+          "occurrence": 2,
+          "projects_user_id": 3956724,
+          "url": "https://api.intra.42.fr/v2/users/amokhtar",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-10T10:24:52.851Z",
+      "created_at": "2025-05-10T05:33:49.359Z",
+      "final_mark": null,
+      "id": 6555638,
+      "locked?": true,
+      "locked_at": "2025-05-10T05:33:49.411Z",
+      "name": "mel-fihr's group",
+      "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-01",
+      "project_id": 1339,
+      "project_session_id": 3325,
+      "repo_url": "git@vogsphere-v2.1337.ma:vogsphere/intra-uuid-291c4f91-046c-4060-9044-2a207d06103c-6555638-mel-fihr",
+      "repo_uuid": "intra-uuid-291c4f91-046c-4060-9044-2a207d06103c-6555638-mel-fihr",
+      "scale_teams": [
+        {
+          "begin_at": "2025-05-11T23:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-11T07:12:33.386Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080125,
+          "questions_with_answers": [],
+          "scale_id": 40895,
+          "truant": {},
+          "updated_at": "2025-05-11T07:12:33.386Z"
+        },
+        {
+          "begin_at": "2025-05-10T17:15:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 165515,
+              "login": "mel-fihr",
+              "url": "https://api.intra.42.fr/v2/users/mel-fihr"
+            }
+          ],
+          "corrector": {
+            "id": 189975,
+            "login": "oimzilen",
+            "url": "https://api.intra.42.fr/v2/users/oimzilen"
+          },
+          "created_at": "2025-05-10T10:34:46.411Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8078625,
+          "questions_with_answers": [],
+          "scale_id": 40895,
+          "truant": {},
+          "updated_at": "2025-05-10T10:34:46.411Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-11T07:12:33.513Z",
+      "url": "https://api.intra.42.fr/v2/teams/6555638",
+      "users": [
+        {
+          "id": 165515,
+          "leader": true,
+          "login": "mel-fihr",
+          "occurrence": 0,
+          "projects_user_id": 4287324,
+          "url": "https://api.intra.42.fr/v2/users/mel-fihr",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-11T19:04:24.417Z",
+      "created_at": "2025-05-09T22:08:23.937Z",
+      "final_mark": null,
+      "id": 6555578,
+      "locked?": true,
+      "locked_at": "2025-05-09T22:08:23.974Z",
+      "name": "mkobaa's group",
+      "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-01",
+      "project_id": 1339,
+      "project_session_id": 3325,
+      "repo_url": "git@vogsphere-v2.1337.ma:vogsphere/intra-uuid-e9333111-722d-467d-bbea-cbcb6cd35211-6555578-mkobaa",
+      "repo_uuid": "intra-uuid-e9333111-722d-467d-bbea-cbcb6cd35211-6555578-mkobaa",
+      "scale_teams": [
+        {
+          "begin_at": "2025-05-11T20:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-11T19:26:22.547Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080859,
+          "questions_with_answers": [],
+          "scale_id": 40895,
+          "truant": {},
+          "updated_at": "2025-05-11T19:26:22.547Z"
+        },
+        {
+          "begin_at": "2025-05-11T21:45:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-11T19:04:41.482Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080848,
+          "questions_with_answers": [],
+          "scale_id": 40895,
+          "truant": {},
+          "updated_at": "2025-05-11T19:04:41.482Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-11T19:26:22.699Z",
+      "url": "https://api.intra.42.fr/v2/teams/6555578",
+      "users": [
+        {
+          "id": 155903,
+          "leader": true,
+          "login": "mkobaa",
+          "occurrence": 0,
+          "projects_user_id": 4287285,
+          "url": "https://api.intra.42.fr/v2/users/mkobaa",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-09T14:53:41.328Z",
+      "created_at": "2025-05-09T14:53:41.087Z",
+      "final_mark": null,
+      "id": 6555201,
+      "locked?": true,
+      "locked_at": "2025-05-09T14:53:41.234Z",
+      "name": "abelkace's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-final-evaluation",
+      "project_id": 1642,
+      "project_session_id": 3953,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-e371bb95-978c-4f87-bbef-9c1933d5b995-6555201-abelkace",
+      "scale_teams": [
+        {
+          "begin_at": "2025-09-01T08:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-09T14:53:41.567Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8077692,
+          "questions_with_answers": [],
+          "scale_id": 42537,
+          "truant": {},
+          "updated_at": "2025-05-09T14:53:41.567Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-09T14:53:41.720Z",
+      "url": "https://api.intra.42.fr/v2/teams/6555201",
+      "users": [
+        {
+          "id": 130352,
+          "leader": true,
+          "login": "abelkace",
+          "occurrence": 0,
+          "projects_user_id": 4287071,
+          "url": "https://api.intra.42.fr/v2/users/abelkace",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-09T14:53:40.595Z",
+      "created_at": "2025-05-09T14:53:40.369Z",
+      "final_mark": null,
+      "id": 6555200,
+      "locked?": true,
+      "locked_at": "2025-05-09T14:53:40.528Z",
+      "name": "abelkace's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-mid-evaluation",
+      "project_id": 1641,
+      "project_session_id": 3952,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-c1dea590-d88c-431e-abbb-ab673e621977-6555200-abelkace",
+      "scale_teams": [
+        {
+          "begin_at": "2025-07-07T08:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-09T14:53:40.813Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8077691,
+          "questions_with_answers": [],
+          "scale_id": 42536,
+          "truant": {},
+          "updated_at": "2025-05-09T14:53:40.813Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-09T14:53:40.852Z",
+      "url": "https://api.intra.42.fr/v2/teams/6555200",
+      "users": [
+        {
+          "id": 130352,
+          "leader": true,
+          "login": "abelkace",
+          "occurrence": 0,
+          "projects_user_id": 4287070,
+          "url": "https://api.intra.42.fr/v2/users/abelkace",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-11T09:33:16.665Z",
+      "created_at": "2025-05-07T20:38:16.913Z",
+      "final_mark": null,
+      "id": 6552429,
+      "locked?": true,
+      "locked_at": "2025-05-07T20:38:16.940Z",
+      "name": "oel-qasr's group",
+      "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-00",
+      "project_id": 1338,
+      "project_session_id": 5181,
+      "repo_url": "git@vogsphere-v2.1337.ma:vogsphere/intra-uuid-d63cea37-02a6-42ce-9b42-e58572511be7-6552429-oel-qasr",
+      "repo_uuid": "intra-uuid-d63cea37-02a6-42ce-9b42-e58572511be7-6552429-oel-qasr",
+      "scale_teams": [
+        {
+          "begin_at": "2025-05-11T11:45:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 161839,
+              "login": "oel-qasr",
+              "url": "https://api.intra.42.fr/v2/users/oel-qasr"
+            }
+          ],
+          "corrector": {
+            "id": 190047,
+            "login": "aaitabde",
+            "url": "https://api.intra.42.fr/v2/users/aaitabde"
+          },
+          "created_at": "2025-05-11T11:09:51.664Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080338,
+          "questions_with_answers": [],
+          "scale_id": 39996,
+          "truant": {
+            "id": 161839,
+            "login": "oel-qasr",
+            "url": "https://api.intra.42.fr/v2/users/oel-qasr"
+          },
+          "updated_at": "2025-05-11T13:03:12.074Z"
+        },
+        {
+          "begin_at": "2025-05-11T12:30:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 161839,
+              "login": "oel-qasr",
+              "url": "https://api.intra.42.fr/v2/users/oel-qasr"
+            }
+          ],
+          "corrector": {
+            "id": 99136,
+            "login": "mberri",
+            "url": "https://api.intra.42.fr/v2/users/mberri"
+          },
+          "created_at": "2025-05-11T11:10:28.942Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080341,
+          "questions_with_answers": [],
+          "scale_id": 39996,
+          "truant": {
+            "id": 161839,
+            "login": "oel-qasr",
+            "url": "https://api.intra.42.fr/v2/users/oel-qasr"
+          },
+          "updated_at": "2025-05-11T12:54:26.342Z"
+        },
+        {
+          "begin_at": "2025-05-11T10:45:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 161839,
+              "login": "oel-qasr",
+              "url": "https://api.intra.42.fr/v2/users/oel-qasr"
+            }
+          ],
+          "corrector": {
+            "id": 98784,
+            "login": "abouazi",
+            "url": "https://api.intra.42.fr/v2/users/abouazi"
+          },
+          "created_at": "2025-05-11T10:07:58.013Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080269,
+          "questions_with_answers": [],
+          "scale_id": 39996,
+          "truant": {
+            "id": 161839,
+            "login": "oel-qasr",
+            "url": "https://api.intra.42.fr/v2/users/oel-qasr"
+          },
+          "updated_at": "2025-05-11T11:09:38.373Z"
+        },
+        {
+          "begin_at": "2025-05-11T10:30:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 161839,
+              "login": "oel-qasr",
+              "url": "https://api.intra.42.fr/v2/users/oel-qasr"
+            }
+          ],
+          "corrector": {
+            "id": 155821,
+            "login": "wabolles",
+            "url": "https://api.intra.42.fr/v2/users/wabolles"
+          },
+          "created_at": "2025-05-11T09:33:52.639Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080228,
+          "questions_with_answers": [],
+          "scale_id": 39996,
+          "truant": {
+            "id": 161839,
+            "login": "oel-qasr",
+            "url": "https://api.intra.42.fr/v2/users/oel-qasr"
+          },
+          "updated_at": "2025-05-11T11:09:33.878Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-11T13:13:38.979Z",
+      "url": "https://api.intra.42.fr/v2/teams/6552429",
+      "users": [
+        {
+          "id": 161839,
+          "leader": true,
+          "login": "oel-qasr",
+          "occurrence": 0,
+          "projects_user_id": 4284962,
+          "url": "https://api.intra.42.fr/v2/users/oel-qasr",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-07T16:18:41.063Z",
+      "created_at": "2025-05-07T16:18:40.924Z",
+      "final_mark": null,
+      "id": 6552081,
+      "locked?": true,
+      "locked_at": "2025-05-07T16:18:41.014Z",
+      "name": "yochakib's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-final-evaluation",
+      "project_id": 1642,
+      "project_session_id": 3953,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-a3d5a560-dcdf-4962-a273-70b03c4628c5-6552081-yochakib",
+      "scale_teams": [
+        {
+          "begin_at": "2025-10-20T02:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-07T16:18:41.220Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8072978,
+          "questions_with_answers": [],
+          "scale_id": 42537,
+          "truant": {},
+          "updated_at": "2025-05-07T16:18:41.220Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-07T16:18:41.252Z",
+      "url": "https://api.intra.42.fr/v2/teams/6552081",
+      "users": [
+        {
+          "id": 112997,
+          "leader": true,
+          "login": "yochakib",
+          "occurrence": 0,
+          "projects_user_id": 4284713,
+          "url": "https://api.intra.42.fr/v2/users/yochakib",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-07T16:18:40.666Z",
+      "created_at": "2025-05-07T16:18:40.538Z",
+      "final_mark": null,
+      "id": 6552080,
+      "locked?": true,
+      "locked_at": "2025-05-07T16:18:40.623Z",
+      "name": "yochakib's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-mid-evaluation",
+      "project_id": 1641,
+      "project_session_id": 3952,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-98f9808a-0a97-4d03-aafe-5bbcd7dd6929-6552080-yochakib",
+      "scale_teams": [
+        {
+          "begin_at": "2025-07-28T02:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-07T16:18:40.786Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8072977,
+          "questions_with_answers": [],
+          "scale_id": 42536,
+          "truant": {},
+          "updated_at": "2025-05-07T16:18:40.786Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-07T16:18:40.807Z",
+      "url": "https://api.intra.42.fr/v2/teams/6552080",
+      "users": [
+        {
+          "id": 112997,
+          "leader": true,
+          "login": "yochakib",
+          "occurrence": 0,
+          "projects_user_id": 4284712,
+          "url": "https://api.intra.42.fr/v2/users/yochakib",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-09T20:00:26.969Z",
+      "created_at": "2025-05-06T16:12:35.253Z",
+      "final_mark": null,
+      "id": 6549666,
+      "locked?": true,
+      "locked_at": "2025-05-06T16:12:35.290Z",
+      "name": "aben-hss's group",
+      "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-02",
+      "project_id": 1340,
+      "project_session_id": 3326,
+      "repo_url": "git@vogsphere-v2.1337.ma:vogsphere/intra-uuid-23e25588-a04c-44a4-982e-db31637e8b69-6549666-aben-hss",
+      "repo_uuid": "intra-uuid-23e25588-a04c-44a4-982e-db31637e8b69-6549666-aben-hss",
+      "scale_teams": [
+        {
+          "begin_at": "2025-05-10T23:00:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 165701,
+              "login": "aben-hss",
+              "url": "https://api.intra.42.fr/v2/users/aben-hss"
+            }
+          ],
+          "corrector": {
+            "id": 98784,
+            "login": "abouazi",
+            "url": "https://api.intra.42.fr/v2/users/abouazi"
+          },
+          "created_at": "2025-05-10T20:55:21.453Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8079694,
+          "questions_with_answers": [],
+          "scale_id": 40897,
+          "truant": {},
+          "updated_at": "2025-05-10T20:55:21.453Z"
+        },
+        {
+          "begin_at": "2025-05-10T19:30:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 165701,
+              "login": "aben-hss",
+              "url": "https://api.intra.42.fr/v2/users/aben-hss"
+            }
+          ],
+          "corrector": {
+            "id": 94200,
+            "login": "ntanjaou",
+            "url": "https://api.intra.42.fr/v2/users/ntanjaou"
+          },
+          "created_at": "2025-05-10T17:46:28.955Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8079568,
+          "questions_with_answers": [],
+          "scale_id": 40897,
+          "truant": {
+            "id": 165701,
+            "login": "aben-hss",
+            "url": "https://api.intra.42.fr/v2/users/aben-hss"
+          },
+          "updated_at": "2025-05-10T20:20:45.381Z"
+        },
+        {
+          "begin_at": "2025-05-09T21:30:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 165701,
+              "login": "aben-hss",
+              "url": "https://api.intra.42.fr/v2/users/aben-hss"
+            }
+          ],
+          "corrector": {
+            "id": 166296,
+            "login": "alaassir",
+            "url": "https://api.intra.42.fr/v2/users/alaassir"
+          },
+          "created_at": "2025-05-09T20:34:03.959Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8078102,
+          "questions_with_answers": [],
+          "scale_id": 40897,
+          "truant": {},
+          "updated_at": "2025-05-09T20:34:03.959Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-10T20:55:21.560Z",
+      "url": "https://api.intra.42.fr/v2/teams/6549666",
+      "users": [
+        {
+          "id": 165701,
+          "leader": true,
+          "login": "aben-hss",
+          "occurrence": 0,
+          "projects_user_id": 4282898,
+          "url": "https://api.intra.42.fr/v2/users/aben-hss",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-11T13:30:00.390Z",
+      "created_at": "2025-05-06T15:52:20.584Z",
+      "final_mark": null,
+      "id": 6549618,
+      "locked?": true,
+      "locked_at": "2025-05-06T15:52:20.621Z",
+      "name": "wikhamli's group",
+      "project_gitlab_path": "pedago_world/42-cursus/inner-circle/philosophers",
+      "project_id": 1334,
+      "project_session_id": 5180,
+      "repo_url": "git@vogsphere-v2.1337.ma:vogsphere/intra-uuid-55cf3682-cbf3-48e5-b310-6d2c160bf2eb-6549618-wikhamli",
+      "repo_uuid": "intra-uuid-55cf3682-cbf3-48e5-b310-6d2c160bf2eb-6549618-wikhamli",
+      "scale_teams": [
+        {
+          "begin_at": "2025-05-11T17:00:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 194825,
+              "login": "wikhamli",
+              "url": "https://api.intra.42.fr/v2/users/wikhamli"
+            }
+          ],
+          "corrector": {
+            "id": 155999,
+            "login": "mkaoukin",
+            "url": "https://api.intra.42.fr/v2/users/mkaoukin"
+          },
+          "created_at": "2025-05-11T16:28:59.640Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080706,
+          "questions_with_answers": [],
+          "scale_id": 38863,
+          "truant": {
+            "id": 155999,
+            "login": "mkaoukin",
+            "url": "https://api.intra.42.fr/v2/users/mkaoukin"
+          },
+          "updated_at": "2025-05-11T17:09:39.104Z"
+        },
+        {
+          "begin_at": "2025-05-11T15:45:00.000Z",
+          "comment": "clean code , good understanding of the project, good luck!",
+          "correcteds": [
+            {
+              "id": 194825,
+              "login": "wikhamli",
+              "url": "https://api.intra.42.fr/v2/users/wikhamli"
+            }
+          ],
+          "corrector": {
+            "id": 190209,
+            "login": "hfhad",
+            "url": "https://api.intra.42.fr/v2/users/hfhad"
+          },
+          "created_at": "2025-05-11T14:35:04.123Z",
+          "feedback": "thank u for ur time and good luck with ur cursus :)",
+          "filled_at": "2025-05-11T16:19:10.348Z",
+          "final_mark": 100,
+          "flag": {
+            "created_at": "2017-05-18T14:07:37.380Z",
+            "icon": "star-1",
+            "id": 9,
+            "name": "Outstanding project",
+            "positive": true,
+            "updated_at": "2017-05-18T14:12:07.415Z"
+          },
+          "id": 8080581,
+          "questions_with_answers": [],
+          "scale_id": 38863,
+          "truant": {},
+          "updated_at": "2025-05-11T16:28:19.565Z"
+        },
+        {
+          "begin_at": "2025-05-11T15:15:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 194825,
+              "login": "wikhamli",
+              "url": "https://api.intra.42.fr/v2/users/wikhamli"
+            }
+          ],
+          "corrector": {
+            "id": 166296,
+            "login": "alaassir",
+            "url": "https://api.intra.42.fr/v2/users/alaassir"
+          },
+          "created_at": "2025-05-11T14:32:48.167Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080574,
+          "questions_with_answers": [],
+          "scale_id": 38863,
+          "truant": {
+            "id": 194825,
+            "login": "wikhamli",
+            "url": "https://api.intra.42.fr/v2/users/wikhamli"
+          },
+          "updated_at": "2025-05-11T15:45:49.217Z"
+        },
+        {
+          "begin_at": "2025-05-11T15:45:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 194825,
+              "login": "wikhamli",
+              "url": "https://api.intra.42.fr/v2/users/wikhamli"
+            }
+          ],
+          "corrector": {
+            "id": 165580,
+            "login": "namrene",
+            "url": "https://api.intra.42.fr/v2/users/namrene"
+          },
+          "created_at": "2025-05-11T14:54:55.384Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080606,
+          "questions_with_answers": [],
+          "scale_id": 38863,
+          "truant": {},
+          "updated_at": "2025-05-11T14:54:55.384Z"
+        },
+        {
+          "begin_at": "2025-05-11T14:15:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 194825,
+              "login": "wikhamli",
+              "url": "https://api.intra.42.fr/v2/users/wikhamli"
+            }
+          ],
+          "corrector": {
+            "id": 155939,
+            "login": "mmaila",
+            "url": "https://api.intra.42.fr/v2/users/mmaila"
+          },
+          "created_at": "2025-05-11T13:30:18.407Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080500,
+          "questions_with_answers": [],
+          "scale_id": 38863,
+          "truant": {
+            "id": 194825,
+            "login": "wikhamli",
+            "url": "https://api.intra.42.fr/v2/users/wikhamli"
+          },
+          "updated_at": "2025-05-11T14:49:55.231Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-11T17:09:39.117Z",
+      "url": "https://api.intra.42.fr/v2/teams/6549618",
+      "users": [
+        {
+          "id": 194825,
+          "leader": true,
+          "login": "wikhamli",
+          "occurrence": 0,
+          "projects_user_id": 4282867,
+          "url": "https://api.intra.42.fr/v2/users/wikhamli",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-05T15:04:59.832Z",
+      "created_at": "2025-05-05T15:04:59.671Z",
+      "final_mark": null,
+      "id": 6546955,
+      "locked?": true,
+      "locked_at": "2025-05-05T15:04:59.771Z",
+      "name": "ayel-fil's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-final-evaluation",
+      "project_id": 1642,
+      "project_session_id": 3953,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-d1b6f326-8937-40e0-a73f-5498d1e5832b-6546955-ayel-fil",
+      "scale_teams": [
+        {
+          "begin_at": "2025-11-03T02:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-05T15:04:59.992Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8065612,
+          "questions_with_answers": [],
+          "scale_id": 42537,
+          "truant": {},
+          "updated_at": "2025-05-05T15:04:59.992Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-05T15:05:00.013Z",
+      "url": "https://api.intra.42.fr/v2/teams/6546955",
+      "users": [
+        {
+          "id": 113039,
+          "leader": true,
+          "login": "ayel-fil",
+          "occurrence": 0,
+          "projects_user_id": 4280978,
+          "url": "https://api.intra.42.fr/v2/users/ayel-fil",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-05T15:04:59.357Z",
+      "created_at": "2025-05-05T15:04:59.213Z",
+      "final_mark": null,
+      "id": 6546954,
+      "locked?": true,
+      "locked_at": "2025-05-05T15:04:59.316Z",
+      "name": "ayel-fil's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-mid-evaluation",
+      "project_id": 1641,
+      "project_session_id": 3952,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-f5f3312e-59f4-4bcc-9fc8-f68fcd65bfe2-6546954-ayel-fil",
+      "scale_teams": [
+        {
+          "begin_at": "2025-08-04T02:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-05T15:04:59.515Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8065611,
+          "questions_with_answers": [],
+          "scale_id": 42536,
+          "truant": {},
+          "updated_at": "2025-05-05T15:04:59.515Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-05T15:04:59.536Z",
+      "url": "https://api.intra.42.fr/v2/teams/6546954",
+      "users": [
+        {
+          "id": 113039,
+          "leader": true,
+          "login": "ayel-fil",
+          "occurrence": 0,
+          "projects_user_id": 4280977,
+          "url": "https://api.intra.42.fr/v2/users/ayel-fil",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-05T14:41:28.815Z",
+      "created_at": "2025-05-05T14:41:28.670Z",
+      "final_mark": null,
+      "id": 6546870,
+      "locked?": true,
+      "locked_at": "2025-05-05T14:41:28.757Z",
+      "name": "mbousouf's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-final-evaluation",
+      "project_id": 1642,
+      "project_session_id": 3953,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-89d7747e-c80b-4653-bd4b-d92e7990a528-6546870-mbousouf",
+      "scale_teams": [
+        {
+          "begin_at": "2025-10-13T02:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-05T14:41:28.969Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8065504,
+          "questions_with_answers": [],
+          "scale_id": 42537,
+          "truant": {},
+          "updated_at": "2025-05-05T14:41:28.969Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-05T14:41:28.997Z",
+      "url": "https://api.intra.42.fr/v2/teams/6546870",
+      "users": [
+        {
+          "id": 113000,
+          "leader": true,
+          "login": "mbousouf",
+          "occurrence": 0,
+          "projects_user_id": 4280913,
+          "url": "https://api.intra.42.fr/v2/users/mbousouf",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-05T14:41:28.327Z",
+      "created_at": "2025-05-05T14:41:28.129Z",
+      "final_mark": null,
+      "id": 6546868,
+      "locked?": true,
+      "locked_at": "2025-05-05T14:41:28.261Z",
+      "name": "mbousouf's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-mid-evaluation",
+      "project_id": 1641,
+      "project_session_id": 3952,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-cff8cf8d-d7d3-44dd-9509-fa9496c5e74e-6546868-mbousouf",
+      "scale_teams": [
+        {
+          "begin_at": "2025-07-21T02:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-05T14:41:28.496Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8065503,
+          "questions_with_answers": [],
+          "scale_id": 42536,
+          "truant": {},
+          "updated_at": "2025-05-05T14:41:28.496Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-05T14:41:28.526Z",
+      "url": "https://api.intra.42.fr/v2/teams/6546868",
+      "users": [
+        {
+          "id": 113000,
+          "leader": true,
+          "login": "mbousouf",
+          "occurrence": 0,
+          "projects_user_id": 4280912,
+          "url": "https://api.intra.42.fr/v2/users/mbousouf",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-11T11:26:47.283Z",
+      "created_at": "2025-05-05T13:20:24.001Z",
+      "final_mark": null,
+      "id": 6546630,
+      "locked?": true,
+      "locked_at": "2025-05-05T13:20:24.046Z",
+      "name": "sbrihamo's group",
+      "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-module-09",
+      "project_id": 2309,
+      "project_session_id": 9246,
+      "repo_url": "git@vogsphere-v2.1337.ma:vogsphere/intra-uuid-bdaa4fab-23ce-4b75-9d2d-f80a7967e7b2-6546630-sbrihamo",
+      "repo_uuid": "intra-uuid-bdaa4fab-23ce-4b75-9d2d-f80a7967e7b2-6546630-sbrihamo",
+      "scale_teams": [
+        {
+          "begin_at": "2025-05-11T17:15:00.000Z",
+          "comment": "good job with everything good luck in next",
+          "correcteds": [
+            {
+              "id": 190109,
+              "login": "sbrihamo",
+              "url": "https://api.intra.42.fr/v2/users/sbrihamo"
+            }
+          ],
+          "corrector": {
+            "id": 155956,
+            "login": "yosabir",
+            "url": "https://api.intra.42.fr/v2/users/yosabir"
+          },
+          "created_at": "2025-05-11T16:14:50.301Z",
+          "feedback": null,
+          "filled_at": "2025-05-11T17:57:37.064Z",
+          "final_mark": 100,
+          "flag": {
+            "created_at": "2017-05-18T14:07:37.380Z",
+            "icon": "star-1",
+            "id": 9,
+            "name": "Outstanding project",
+            "positive": true,
+            "updated_at": "2017-05-18T14:12:07.415Z"
+          },
+          "id": 8080682,
+          "questions_with_answers": [],
+          "scale_id": 44346,
+          "truant": {},
+          "updated_at": "2025-05-11T17:57:37.075Z"
+        },
+        {
+          "begin_at": "2025-05-11T12:15:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 190109,
+              "login": "sbrihamo",
+              "url": "https://api.intra.42.fr/v2/users/sbrihamo"
+            }
+          ],
+          "corrector": {
+            "id": 166296,
+            "login": "alaassir",
+            "url": "https://api.intra.42.fr/v2/users/alaassir"
+          },
+          "created_at": "2025-05-11T11:45:03.086Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080386,
+          "questions_with_answers": [],
+          "scale_id": 44346,
+          "truant": {},
+          "updated_at": "2025-05-11T11:45:03.086Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-11T17:57:37.367Z",
+      "url": "https://api.intra.42.fr/v2/teams/6546630",
+      "users": [
+        {
+          "id": 190109,
+          "leader": true,
+          "login": "sbrihamo",
+          "occurrence": 0,
+          "projects_user_id": 4280732,
+          "url": "https://api.intra.42.fr/v2/users/sbrihamo",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-02T09:35:19.311Z",
+      "created_at": "2025-05-02T09:35:19.149Z",
+      "final_mark": null,
+      "id": 6542054,
+      "locked?": true,
+      "locked_at": "2025-05-02T09:35:19.267Z",
+      "name": "kben-ham's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-final-evaluation",
+      "project_id": 1642,
+      "project_session_id": 3953,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-181f3439-3f65-4e90-b215-b502afef289f-6542054-kben-ham",
+      "scale_teams": [
+        {
+          "begin_at": "2025-10-20T02:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-02T09:35:19.484Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8055983,
+          "questions_with_answers": [],
+          "scale_id": 42537,
+          "truant": {},
+          "updated_at": "2025-05-02T09:35:19.484Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-02T09:35:19.500Z",
+      "url": "https://api.intra.42.fr/v2/teams/6542054",
+      "users": [
+        {
+          "id": 113338,
+          "leader": true,
+          "login": "kben-ham",
+          "occurrence": 0,
+          "projects_user_id": 4277448,
+          "url": "https://api.intra.42.fr/v2/users/kben-ham",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-02T09:35:18.858Z",
+      "created_at": "2025-05-02T09:35:18.718Z",
+      "final_mark": null,
+      "id": 6542053,
+      "locked?": true,
+      "locked_at": "2025-05-02T09:35:18.809Z",
+      "name": "kben-ham's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-mid-evaluation",
+      "project_id": 1641,
+      "project_session_id": 3952,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-6ca60018-3a3a-48c8-ae20-ca99124c1d88-6542053-kben-ham",
+      "scale_teams": [
+        {
+          "begin_at": "2025-07-28T02:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-02T09:35:19.038Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8055982,
+          "questions_with_answers": [],
+          "scale_id": 42536,
+          "truant": {},
+          "updated_at": "2025-05-02T09:35:19.038Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-02T09:35:19.056Z",
+      "url": "https://api.intra.42.fr/v2/teams/6542053",
+      "users": [
+        {
+          "id": 113338,
+          "leader": true,
+          "login": "kben-ham",
+          "occurrence": 0,
+          "projects_user_id": 4277447,
+          "url": "https://api.intra.42.fr/v2/users/kben-ham",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-04-30T10:08:33.476Z",
+      "created_at": "2025-04-30T10:08:33.315Z",
+      "final_mark": null,
+      "id": 6537884,
+      "locked?": true,
+      "locked_at": "2025-04-30T10:08:33.416Z",
+      "name": "yoel-bas's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-final-evaluation",
+      "project_id": 1642,
+      "project_session_id": 3953,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-25c65eef-8176-499e-96de-b7067a90f891-6537884-yoel-bas",
+      "scale_teams": [
+        {
+          "begin_at": "2025-10-20T02:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-04-30T10:08:33.682Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8049057,
+          "questions_with_answers": [],
+          "scale_id": 42537,
+          "truant": {},
+          "updated_at": "2025-04-30T10:08:33.682Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-04-30T10:08:33.702Z",
+      "url": "https://api.intra.42.fr/v2/teams/6537884",
+      "users": [
+        {
+          "id": 115512,
+          "leader": true,
+          "login": "yoel-bas",
+          "occurrence": 0,
+          "projects_user_id": 4274528,
+          "url": "https://api.intra.42.fr/v2/users/yoel-bas",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-04-30T10:08:32.975Z",
+      "created_at": "2025-04-30T10:08:32.858Z",
+      "final_mark": null,
+      "id": 6537883,
+      "locked?": true,
+      "locked_at": "2025-04-30T10:08:32.935Z",
+      "name": "yoel-bas's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-mid-evaluation",
+      "project_id": 1641,
+      "project_session_id": 3952,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-f7807cd9-4645-4295-b858-5ce371736c25-6537883-yoel-bas",
+      "scale_teams": [
+        {
+          "begin_at": "2025-07-28T02:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-04-30T10:08:33.156Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8049056,
+          "questions_with_answers": [],
+          "scale_id": 42536,
+          "truant": {},
+          "updated_at": "2025-04-30T10:08:33.156Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-04-30T10:08:33.179Z",
+      "url": "https://api.intra.42.fr/v2/teams/6537883",
+      "users": [
+        {
+          "id": 115512,
+          "leader": true,
+          "login": "yoel-bas",
+          "occurrence": 0,
+          "projects_user_id": 4274527,
+          "url": "https://api.intra.42.fr/v2/users/yoel-bas",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-04-29T09:53:21.239Z",
+      "created_at": "2025-04-29T09:53:21.047Z",
+      "final_mark": null,
+      "id": 6534761,
+      "locked?": true,
+      "locked_at": "2025-04-29T09:53:21.166Z",
+      "name": "isel-har's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-final-evaluation",
+      "project_id": 1642,
+      "project_session_id": 3953,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-c4df3720-558a-4f96-aa93-db61cdc56ef0-6534761-isel-har",
+      "scale_teams": [
+        {
+          "begin_at": "2025-10-20T02:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-04-29T09:53:21.423Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8044584,
+          "questions_with_answers": [],
+          "scale_id": 42537,
+          "truant": {},
+          "updated_at": "2025-04-29T09:53:21.423Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-04-29T09:53:21.447Z",
+      "url": "https://api.intra.42.fr/v2/teams/6534761",
+      "users": [
+        {
+          "id": 113173,
+          "leader": true,
+          "login": "isel-har",
+          "occurrence": 0,
+          "projects_user_id": 4272207,
+          "url": "https://api.intra.42.fr/v2/users/isel-har",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-04-29T09:53:20.675Z",
+      "created_at": "2025-04-29T09:53:20.422Z",
+      "final_mark": null,
+      "id": 6534759,
+      "locked?": true,
+      "locked_at": "2025-04-29T09:53:20.624Z",
+      "name": "isel-har's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-mid-evaluation",
+      "project_id": 1641,
+      "project_session_id": 3952,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-65e179a5-df31-458c-baf0-1e35ea4efe74-6534759-isel-har",
+      "scale_teams": [
+        {
+          "begin_at": "2025-07-28T02:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-04-29T09:53:20.862Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8044583,
+          "questions_with_answers": [],
+          "scale_id": 42536,
+          "truant": {},
+          "updated_at": "2025-04-29T09:53:20.862Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-04-29T09:53:20.888Z",
+      "url": "https://api.intra.42.fr/v2/teams/6534759",
+      "users": [
+        {
+          "id": 113173,
+          "leader": true,
+          "login": "isel-har",
+          "occurrence": 0,
+          "projects_user_id": 4272205,
+          "url": "https://api.intra.42.fr/v2/users/isel-har",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-05-11T15:03:48.150Z",
+      "created_at": "2025-04-27T10:53:46.500Z",
+      "final_mark": null,
+      "id": 6530081,
+      "locked?": true,
+      "locked_at": "2025-04-27T10:53:46.539Z",
+      "name": "ioulkhir's group",
+      "project_gitlab_path": "pedago_world/42-cursus/inner-circle/philosophers",
+      "project_id": 1334,
+      "project_session_id": 5180,
+      "repo_url": "git@vogsphere-v2.1337.ma:vogsphere/intra-uuid-92d5802d-a1fd-42a5-a09b-ffec238e2e73-6530081-ioulkhir",
+      "repo_uuid": "intra-uuid-92d5802d-a1fd-42a5-a09b-ffec238e2e73-6530081-ioulkhir",
+      "scale_teams": [
+        {
+          "begin_at": "2025-05-11T19:45:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-05-11T15:04:30.507Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080621,
+          "questions_with_answers": [],
+          "scale_id": 38863,
+          "truant": {},
+          "updated_at": "2025-05-11T15:04:30.507Z"
+        },
+        {
+          "begin_at": "2025-05-11T16:00:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 189608,
+              "login": "ioulkhir",
+              "url": "https://api.intra.42.fr/v2/users/ioulkhir"
+            }
+          ],
+          "corrector": {
+            "id": 166296,
+            "login": "alaassir",
+            "url": "https://api.intra.42.fr/v2/users/alaassir"
+          },
+          "created_at": "2025-05-11T15:04:10.496Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080616,
+          "questions_with_answers": [],
+          "scale_id": 38863,
+          "truant": {},
+          "updated_at": "2025-05-11T15:04:10.496Z"
+        },
+        {
+          "begin_at": "2025-05-11T15:45:00.000Z",
+          "comment": null,
+          "correcteds": [
+            {
+              "id": 189608,
+              "login": "ioulkhir",
+              "url": "https://api.intra.42.fr/v2/users/ioulkhir"
+            }
+          ],
+          "corrector": {
+            "id": 155999,
+            "login": "mkaoukin",
+            "url": "https://api.intra.42.fr/v2/users/mkaoukin"
+          },
+          "created_at": "2025-05-11T15:04:03.500Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8080615,
+          "questions_with_answers": [],
+          "scale_id": 38863,
+          "truant": {},
+          "updated_at": "2025-05-11T15:04:03.500Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-05-11T15:04:30.618Z",
+      "url": "https://api.intra.42.fr/v2/teams/6530081",
+      "users": [
+        {
+          "id": 189608,
+          "leader": true,
+          "login": "ioulkhir",
+          "occurrence": 0,
+          "projects_user_id": 4268704,
+          "url": "https://api.intra.42.fr/v2/users/ioulkhir",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-04-25T08:37:03.701Z",
+      "created_at": "2025-04-25T08:37:03.546Z",
+      "final_mark": null,
+      "id": 6527380,
+      "locked?": true,
+      "locked_at": "2025-04-25T08:37:03.644Z",
+      "name": "mkhairal's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-final-evaluation",
+      "project_id": 1642,
+      "project_session_id": 3953,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-ea783f37-e831-4c1c-a9e4-76b477c5e505-6527380-mkhairal",
+      "scale_teams": [
+        {
+          "begin_at": "2025-10-06T02:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-04-25T08:37:03.849Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8033880,
+          "questions_with_answers": [],
+          "scale_id": 42537,
+          "truant": {},
+          "updated_at": "2025-04-25T08:37:03.849Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-04-25T08:37:03.870Z",
+      "url": "https://api.intra.42.fr/v2/teams/6527380",
+      "users": [
+        {
+          "id": 95235,
+          "leader": true,
+          "login": "mkhairal",
+          "occurrence": 0,
+          "projects_user_id": 4266913,
+          "url": "https://api.intra.42.fr/v2/users/mkhairal",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-04-25T08:37:03.239Z",
+      "created_at": "2025-04-25T08:37:03.023Z",
+      "final_mark": null,
+      "id": 6527379,
+      "locked?": true,
+      "locked_at": "2025-04-25T08:37:03.144Z",
+      "name": "mkhairal's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-mid-evaluation",
+      "project_id": 1641,
+      "project_session_id": 3952,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-40a38337-8a43-4b8e-b0f2-b2426722f93b-6527379-mkhairal",
+      "scale_teams": [
+        {
+          "begin_at": "2025-07-14T02:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-04-25T08:37:03.389Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8033879,
+          "questions_with_answers": [],
+          "scale_id": 42536,
+          "truant": {},
+          "updated_at": "2025-04-25T08:37:03.389Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-04-25T08:37:03.416Z",
+      "url": "https://api.intra.42.fr/v2/teams/6527379",
+      "users": [
+        {
+          "id": 95235,
+          "leader": true,
+          "login": "mkhairal",
+          "occurrence": 0,
+          "projects_user_id": 4266912,
+          "url": "https://api.intra.42.fr/v2/users/mkhairal",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    },
+    {
+      "closed?": true,
+      "closed_at": "2025-04-25T08:31:47.899Z",
+      "created_at": "2025-04-25T08:31:47.734Z",
+      "final_mark": null,
+      "id": 6527364,
+      "locked?": true,
+      "locked_at": "2025-04-25T08:31:47.853Z",
+      "name": "otait-ta's group",
+      "project_gitlab_path": "pedago_world/42-cursus/outer-circle/internship-i/internship-i-company-final-evaluation",
+      "project_id": 1642,
+      "project_session_id": 3953,
+      "repo_url": null,
+      "repo_uuid": "intra-uuid-f650c6c9-81f1-40b1-b73c-ff1304aa16cf-6527364-otait-ta",
+      "scale_teams": [
+        {
+          "begin_at": "2025-08-18T02:00:00.000Z",
+          "comment": null,
+          "correcteds": "invisible",
+          "corrector": "invisible",
+          "created_at": "2025-04-25T08:31:48.103Z",
+          "feedback": null,
+          "filled_at": null,
+          "final_mark": null,
+          "flag": {
+            "created_at": "2015-09-14T23:06:52.000Z",
+            "icon": "check-4",
+            "id": 1,
+            "name": "Ok",
+            "positive": true,
+            "updated_at": "2015-09-14T23:06:52.000Z"
+          },
+          "id": 8033867,
+          "questions_with_answers": [],
+          "scale_id": 42537,
+          "truant": {},
+          "updated_at": "2025-04-25T08:31:48.103Z"
+        }
+      ],
+      "status": "waiting_for_correction",
+      "teams_uploads": [],
+      "terminating_at": null,
+      "updated_at": "2025-04-25T08:31:48.130Z",
+      "url": "https://api.intra.42.fr/v2/teams/6527364",
+      "users": [
+        {
+          "id": 130432,
+          "leader": true,
+          "login": "otait-ta",
+          "occurrence": 0,
+          "projects_user_id": 4266898,
+          "url": "https://api.intra.42.fr/v2/users/otait-ta",
+          "validated": true
+        }
+      ],
+      "validated?": null
+    }
+  ],
+  "total_hours": 139
+}

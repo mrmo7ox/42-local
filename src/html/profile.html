@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widssth, initial-scale=1.0">
+    <link href="../style/output.css" rel="stylesheet">
+    <link href="../style/profile.css" rel="stylesheet">
+    <script src="../js/profile.js"></script>
+    <script src="https://kit.fontawesome.com/1cc2b7bb17.js" crossorigin="anonymous"></script>
+</head>
+<style>
+
+</style>
+
+<body class="relative">
+    <div id="loader" class="w-full h-[100vh] flex flex-col gap-8 justify-center items-center">
+        <h1 id="update" class="w-[50%] text-center text-green-400"></h1>
+        <span class="scale-[2] loading loading-spinner loading-xl"></span>
+    </div>
+    <div id="content" class="hidden gap-3 flex-col w-full flex justify-start items-center">
+        <div class="mt-2 px-4 flex justify-between items-center w-[90%] h-[100px]">
+            <a href="../../index.html" id="back"
+                class="hover:scale-[0.90] cursor-pointer text-[40px] text-white duration-200 transition-all ">🏠</a>
+            <h1 id="logtime" class="text-center text-[40px]">0</h1>
+            <div id="user_profile" bounce="-10"
+                class="shadow-xl shadow-[#232633] border-3 border-[#2b2d36] flex text-[40px] justify-center items-center text-[#b3b3b3] bg-[#232633] w-[80px] h-[80px] rounded-full">
+            </div>
+        </div>
+        <div id="teams" class="mt-4 gap-2 flex flex-row w-full px-10">
+        </div>
+</body>
+
+</html>
