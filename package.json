@@ -1,12 +1,13 @@
 {
   "name": "42-local",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Install without sudo and clean your local",
   "main": "main.js",
   "scripts": {
     "tl": "npx tailwindcss -i ./src/style/input.css -o ./src/style/output.css --watch",
     "start": "electron .",
     "build:css": "npx tailwindcss -i ./src/style/input.css -o ./src/style/output.css",
+    "prebuild": "npm run build:css",
     "build": "electron-builder",
     "watch": "nodemon --exec electron ."
   },
@@ -15,15 +16,16 @@
     "url": "https://github.com/mrmo7ox/42-local.git"
   },
   "publisher": {
-    "povider": "github",
+    "provider": "github",
     "releaseType": "release"
   },
   "author": "mrmo7ox <medelouardisec@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@tailwindcss/cli": "^4.1.4",
     "autoprefixer": "^10.4.21",
     "daisyui": "^5.0.27",
-    "electron": "^35.1.5",
+    "electron": "^36.2.0",
     "electron-builder": "^26.0.12",
     "electron-log": "^5.3.4",
     "electron-updater": "^6.6.2",
@@ -31,26 +33,36 @@
     "tailwindcss": "^4.1.4"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.4",
+    "electron-updater": "^6.6.2",
     "axios": "^1.9.0",
+    "cookie-parser": "^1.4.7",
     "create-desktop-shortcuts": "^1.11.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
     "follow-redirects": "^1.15.9",
     "nodemon": "^3.1.9",
+    "open": "^10.1.2",
     "tar": "^7.4.3"
   },
   "build": {
     "appId": "com.42local.mrmo7ox",
     "productName": "42-Local",
     "files": [
-      "**/*"
+      "apps/**/*",
+      "installers/**/*",
+      "src/**/*",
+      "index.html",
+      "main.js",
+      "server.js",
+      "package.json",
+      "node_modules/**/*"
     ],
     "directories": {
       "output": "dist"
     },
     "linux": {
       "target": [
-        "AppImage",
-        "deb"
+        "AppImage"
       ],
       "icon": "./src/icons/icon.png",
       "category": "Utility"

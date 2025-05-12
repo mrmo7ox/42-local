@@ -5,8 +5,6 @@ from datetime import datetime, timedelta, timezone
 from flask import Flask, redirect, request, make_response
 import uuid
 from logtime import *
-from dotenv import load_dotenv
-load_dotenv()
 
 CLIENT_ID = os.getenv('CLIENT_ID')
 CLIENT_SECRET = os.getenv('CLIENT_SECRET')
@@ -99,17 +97,15 @@ def token_steup(user_id):
     return headers, user_response.json()
 
 
-def token_steup(user_id):
-    if not user_id:
-        return "Error: No user ID found in cookies.", 400
-    tokens = load_tokens()
-    user_token = tokens.get(user_id)
-    if user_token and is_token_valid(user_token):
-        access_token = user_token['access_token']
-    else:
+def token_steup(access_token):
+    # if not user_id:
+    #     return "Error: No user ID found in cookies.", 400
+    # tokens = load_tokens()
+    # user_token = tokens.get(user_id)
+    # if user_token and is_token_valid(user_token):
+    #     access_token = user_token['access_token']
+    # else:
         code = request.args.get("code")
-        if not code:
-            return "Error: No authorization code provided.", 400
         new_token = get_new_token(code)
         if not new_token:
             return "Error: Failed to obtain access token.", 400

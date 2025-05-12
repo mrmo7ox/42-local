@@ -5,9 +5,8 @@ import requests
 from datetime import datetime, timedelta, timezone
 from flask import Flask, redirect, request, make_response
 import uuid
-from logtime_utils import *
-from logtime import *
-from token_gen import *
+from api import *
+
 
 
 def is_time_in_range(time):
