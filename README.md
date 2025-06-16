@@ -41,12 +41,8 @@ This project is aimed at providing a clean and straightforward setup for 42-loca
    ```
 
 ## Screenshots 📸
-<div style="display: flex; justify-content: center;">
-   <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px;">
-     <img src="https://i.ibb.co/Qv90xPmd/Screenshot-from-2025-04-21-11-10-36.png" alt="Screenshot 1" style="width: 30%;">
-     <img src="https://i.ibb.co/20MGHs4Q/Screenshot-from-2025-04-21-11-10-46.png" alt="Screenshot 2" style="width: 30%;">
-     <img src="https://i.ibb.co/YFSY4xx6/Screenshot-from-2025-04-21-11-10-54.png" alt="Screenshot 3" style="width: 30%;">
-   </div>
+<div align="center">
+     <img style="text-align: center;" src="http://mo7ox.com/wp-content/uploads/2025/06/simplescreenrecorder-2025-06-16_18.21.16.gif" alt="Screenshot 1" style="width: 30%;">
 <div>
 https://github.com/mrmo7ox/42-local/releases/
 
