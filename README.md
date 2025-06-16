@@ -42,7 +42,7 @@ This project is aimed at providing a clean and straightforward setup for 42-loca
 
 ## Screenshots 📸
 <div align="center">
-     <img style="text-align: center;" src="http://mo7ox.com/wp-content/uploads/2025/06/simplescreenrecorder-2025-06-16_18.21.16.gif" alt="Screenshot 1" style="width: 30%;">
+     <img style="text-align: center;" src="http://mo7ox.com/wp-content/uploads/2025/06/simplescreenrecorder-2025-06-16_18.21.16.gif" >
 <div>
 https://github.com/mrmo7ox/42-local/releases/
 
