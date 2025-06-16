@@ -12,6 +12,12 @@
       "bashfile": "./installers/norm.sh",
       "status": "no"
     },
+    "ft_lock": {
+      "type": "bash",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/8/8d/42_Logo.svg",
+      "bashfile": "./installers/ft_lock.sh",
+      "status": "no"
+    },
     "nvm": {
       "type": "bash",
       "icon": "https://static-00.iconduck.com/assets.00/node-js-icon-1817x2048-g8tzf91e.png",

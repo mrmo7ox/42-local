@@ -53,10 +53,8 @@ clean_glob "$HOME"/Library/Application\ Support/BraveSoftware/Brave-Browser/Defa
 clean_glob "$HOME"/Library/Application\ Support/BraveSoftware/Brave-Browser/Crashpad/completed/*
 clean_glob "$HOME"/Library/Application\ Support/Spotify/PersistentCache/*
 
-# .DS_Store files
 clean_glob "$HOME"/Desktop/**/*/.DS_Store
 
-# Temporary downloaded files with browsers
 clean_glob "$HOME"/Library/Application\ Support/Chromium/Default/File\ System
 clean_glob "$HOME"/Library/Application\ Support/Chromium/Profile\ [0-9]/File\ System
 clean_glob "$HOME"/Library/Application\ Support/Google/Chrome/Default/File\ System
@@ -64,8 +62,32 @@ clean_glob "$HOME"/Library/Application\ Support/Google/Chrome/Profile\ [0-9]/Fil
 clean_glob "$HOME"/Library/Application\ Support/BraveSoftware/Brave-Browser/Default/File\ System
 clean_glob "$HOME"/Library/Application\ Support/BraveSoftware/Brave-Browser/Profile\ [0-9]/File\ System
 
-# Things related to pool (piscine)
-clean_glob "$HOME"/Desktop/Piscine\ Rules\ *.mp4
-clean_glob "$HOME"/Desktop/PLAY_ME.webloc
+clean_glob "$HOME/.cache/appstream"
+clean_glob "$HOME/.cache/evolution"
+clean_glob "$HOME/.cache/flatpak"
+clean_glob "$HOME/.cache/folks"
+clean_glob "$HOME/.cache/fontconfig"
+clean_glob "$HOME/.cache/gnome-calculator"
+clean_glob "$HOME/.cache/gnome-desktop-thumbnailer"
+clean_glob "$HOME/.cache/gnome-software"
+clean_glob "$HOME/.cache/gstreamer-1.0"
+clean_glob "$HOME/.cache/mesa_shader_cache"
+clean_glob "$HOME/.cache/mesa_shader_cache"
+clean_glob "$HOME/.cache/pip"
+clean_glob "$HOME/.cache/qBittorrent"
+clean_glob "$HOME/.cache/thumbnails"
+clean_glob "$HOME/.cache/tracker3"
+clean_glob "$HOME/.cache/typescript"
+clean_glob "$HOME/.cache/vscode-cpptools"
+clean_glob "$HOME/.config/42-local"
+clean_glob "$HOME/.config/qBittorrent"
+clean_glob "$HOME/.config/htop"
+clean_glob "$HOME/.local/share/vlc"
+clean_glob "$HOME/.local/share/gnote"
+clean_glob "$HOME/.local/share/Trash"
+clean_glob "$HOME/.local/share/nano"
+clean_glob "$HOME/.local/share/qBittorrent"
+clean_glob "$HOME/.var/app/com.google.Chrome"
+clean_glob "$HOME/.var/app/*/cache"
 
 echo "Cleaning completed."
