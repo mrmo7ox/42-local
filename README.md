@@ -1,5 +1,7 @@
 # 42-local 🚀
-
+<div align="center">
+  <img style="text-align: center;" width="200" src="https://mo7ox.com/wp-content/uploads/2025/06/42-local.png">
+</div>
 42-local clean and install + see your log time and  who pushed a project 
 
 ## Table of Contents 📚
