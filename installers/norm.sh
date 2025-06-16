@@ -1,3 +1,5 @@
+#!/bin/bash
+
 settings="$HOME/.config/Code/User/settings.json"
 INSERT='  "[c]": {\n    "editor.defaultFormatter": "keyhr.42-c-format"\n  },'
 

@@ -155,20 +155,26 @@ const createLoginWindow = (onLoginSuccess, visible = true) => {
             const pageData = await loginWin.webContents.executeJavaScript(`
                 new Promise((resolve, reject) => {
                     const SERVER_URL = "${SERVER_URL}";
+                    
                     const checkForToken = setInterval(() => {
                         if (window.location.href.includes(SERVER_URL)) {
-                            const token = document.body.innerText.trim(); 
+                            const currentText = document.body.innerText.trim();
+                            if (currentText.includes("Authorize 42chat to use your account?")) {
+                                console.log("Waiting for approval...");
+                                return;
+                            }
+                            const token = document.body.innerText.trim();
                             if (token) {
                                 clearInterval(checkForToken);
                                 resolve(token);
                             }
                         }
-                    }, 500);
-            
+                    }, 1000);
+
                     setTimeout(() => {
                         clearInterval(checkForToken);
                         reject(new Error("Token not found within timeout."));
-                    }, 30000); // 30-second timeout
+                    }, 30000); // 30 second timeout
                 });
             `);
             if (pageData) {

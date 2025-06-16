@@ -49,7 +49,7 @@
     "productName": "42-Local",
     "files": [
       "apps/**/*",
-      "installers/**/*",
+      "/tmp/installer/*",
       "src/**/*",
       "index.html",
       "main.js",

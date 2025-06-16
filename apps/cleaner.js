@@ -2,7 +2,7 @@ const { exec } = require('child_process');
 
 function auto_cleaner(event) {
     return new Promise((resolve, reject) => {
-        let cmd = "./installers/cleaner.sh";
+        let cmd = "/tmp/installer/cleaner.sh";
 
         const process = exec(cmd);
 

@@ -3,31 +3,31 @@
     "vscode": {
       "type": "bash",
       "icon": "https://icons.veryicon.com/png/o/business/vscode-program-item-icon/vscode.png",
-      "bashfile": "./installers/vscode.sh",
+      "bashfile": "/tmp/installer/vscode.sh",
       "status": "no"
     },
     "norm": {
       "type": "bash",
       "icon": "https://keyhr.gallerycdn.vsassets.io/extensions/keyhr/42-c-format/0.0.5/1660566633484/Microsoft.VisualStudio.Services.Icons.Default",
-      "bashfile": "./installers/norm.sh",
+      "bashfile": "/tmp/installer/norm.sh",
       "status": "no"
     },
     "ft_lock": {
       "type": "bash",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/8/8d/42_Logo.svg",
-      "bashfile": "./installers/ft_lock.sh",
+      "bashfile": "/tmp/installer/ft_lock.sh",
       "status": "no"
     },
     "nvm": {
       "type": "bash",
       "icon": "https://static-00.iconduck.com/assets.00/node-js-icon-1817x2048-g8tzf91e.png",
-      "bashfile": "./installers/nvm.sh",
+      "bashfile": "/tmp/installer/nvm.sh",
       "status": "no"
     },
     "burpsuite": {
       "type": "bash",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BurpSuite_Comunity_Edition.svg/800px-BurpSuite_Comunity_Edition.svg.png",
-      "bashfile": "./installers/burp.sh",
+      "bashfile": "/tmp/installer/burp.sh",
       "status": "no"
     },
     "Extension Manager": {

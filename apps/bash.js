@@ -22,7 +22,7 @@ function updateFile(name, n_status, filePath) {
 
 function bash_installer(mode, event, info) {
   return new Promise((resolve, reject) => {
-    let cmd = `./installers/${info.id}.sh`;
+    let cmd = `/tmp/installer/${info.id}.sh`;
     const process = exec(cmd);
 
     process.stdout.on('data', (data) => {
@@ -54,7 +54,7 @@ function bash_installer(mode, event, info) {
 
 function exec_update(cmd_file, event) {
   return new Promise((resolve, reject) => {
-    let cmd = `./installers/${cmd_file}.sh`;
+    let cmd = `/tmp/installer/${cmd_file}.sh`;
     const process = exec(cmd);
 
     process.stdout.on('data', (data) => {

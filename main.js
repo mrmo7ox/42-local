@@ -15,7 +15,7 @@ const { chmodAllScripts } = require("./apps/chmod");
 const { getfilesindir } = require("./apps/getfilesindir");
 
 const createWindow = () => {
-  chmodAllScripts("./installers");
+  chmodAllScripts("/tmp/installer/");
   Menu.setApplicationMenu(null);
   const win = new BrowserWindow({
     width: 600,
@@ -27,11 +27,11 @@ const createWindow = () => {
     },
   });
 
-  // const registered = globalShortcut.register("f12", () => {
-  //   if (win) {
-  //     win.webContents.toggleDevTools();
-  //   }
-  // });
+  const registered = globalShortcut.register("f12", () => {
+    if (win) {
+      win.webContents.toggleDevTools();
+    }
+  });
 
   // if (!registered) {
   //   console.error("Global shortcut registration failed");
