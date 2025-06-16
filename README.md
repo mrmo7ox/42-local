@@ -44,7 +44,8 @@ This project is aimed at providing a clean and straightforward setup for 42-loca
 <div align="center">
      <img style="text-align: center;" src="https://github.com/mrmo7ox/42-local/blob/master/simplescreenrecorder-2025-06-16_18.21.16.gif" >
 <div>
-https://github.com/mrmo7ox/42-local/releases/
+<div align="left">
+<div>
 
 ## Program 💻
 To use the `.appimage` file downloaded from the [Releases](https://github.com/mrmo7ox/42-local/releases) page:
