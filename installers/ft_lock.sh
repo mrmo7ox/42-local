@@ -28,7 +28,7 @@ mv "$CLONE_DIR" "$TARGET_DIR"
 
 if ! gnome-extensions info "$EXTENSION_NAME" | grep -q "State: ENABLED"; then
   echo "Enabling extension $EXTENSION_NAME..."
-  gnome-extensions enable "$EXTENSION_NAME"
+  gnome-extensions enable topbar-icon@mrmo7ox
 else
   echo "Extension $EXTENSION_NAME is already enabled."
 fi
