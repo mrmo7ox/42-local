@@ -1,6 +1,6 @@
 # 42-local 🚀
 
-42-local clean and install
+42-local clean and install + see your log time and  who pushed a project 
 
 ## Table of Contents 📚
 - [Description](#description)
