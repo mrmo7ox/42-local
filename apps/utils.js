@@ -129,7 +129,7 @@ function readJsonFile(filePath, callback) {
 }
 
 function getDiskSpaceForDevice(device, callback) {
-  exec(`df -m | grep /home/$USER`, (error, stdout, stderr) => {
+  exec(`df -m 2>/dev/null | grep "/home/$USER"`, (error, stdout, stderr) => {
     if (error) {
       console.error(`Error fetching disk space: ${error.message}`);
       callback(null);
